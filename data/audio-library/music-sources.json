@@ -1,0 +1,338 @@
+[
+  {
+    "id": "music-guzheng",
+    "name": "古筝与二胡·帝国山河",
+    "instrument": "古筝 / 二胡 / 尺八 / 管弦乐",
+    "traits": [
+      "史诗",
+      "东方"
+    ],
+    "description": "Imperial China Cinematic，以古筝、二胡、尺八与管弦乐构成的东方电影配乐。",
+    "author": "Shane Ivers (Silverman Sound)",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://www.silvermansound.com/free-music/imperial-china-cinematic",
+    "downloadUrl": "https://www.silvermansound.com/wp-content/uploads/imperial-china-cinematic.mp3",
+    "originalSha256": "4a8bf29f72af49ad3e031f2c4f6c4bc05af2b2fadc2013dccb4dbaa4e800bc54"
+  },
+  {
+    "id": "music-erhu-trailer",
+    "name": "二胡·悬疑预告",
+    "instrument": "二胡 / 弦乐",
+    "traits": [
+      "悬疑",
+      "紧张"
+    ],
+    "description": "Erhu Trailer，二胡音色与多乐器编配的电影预告配乐。",
+    "author": "Mark_Murray",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://freesound.org/people/Mark_Murray/sounds/634648/",
+    "downloadUrl": "https://cdn.freesound.org/previews/634/634648_13315998-hq.mp3",
+    "originalSha256": "7577eb0f1c655e56a1e56ea1200a6d6b4e05d20031127c300c45ad3137bcd393"
+  },
+  {
+    "id": "music-suona-opera",
+    "name": "唢呐与锣鼓·戏曲过场",
+    "instrument": "唢呐 / 锣鼓",
+    "traits": [
+      "民俗",
+      "热烈"
+    ],
+    "description": "北京戏曲现场的唢呐与锣鼓片段，含现场空间声。",
+    "author": "xserra",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://freesound.org/people/xserra/sounds/162035/",
+    "downloadUrl": "https://cdn.freesound.org/previews/162/162035_43-hq.mp3",
+    "originalSha256": "988d891a7e05afc3e75e39f10cc55cf1e7f7d48d86c24b33560a9ce506a9cbaa",
+    "collection": "opera",
+    "operaGenre": "京剧",
+    "materialType": "器乐过场"
+  },
+  {
+    "id": "music-suona-ritual",
+    "name": "唢呐·民俗仪式",
+    "instrument": "唢呐 / 民乐",
+    "traits": [
+      "民俗",
+      "仪式"
+    ],
+    "description": "香港民俗仪式现场民乐录音，包含唢呐与现场环境声。",
+    "author": "soloan",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://freesound.org/people/soloan/sounds/437470/",
+    "downloadUrl": "https://cdn.freesound.org/previews/437/437470_519220-hq.mp3",
+    "originalSha256": "8e2f8d680119525efda04303a73dab8b81f494e67c74cf73c203fb2e4beb7942"
+  },
+  {
+    "id": "music-piano-light",
+    "name": "钢琴·轻盈小品",
+    "instrument": "钢琴",
+    "traits": [
+      "轻快",
+      "童趣"
+    ],
+    "description": "A Simple Trifle，轻巧钢琴独奏。",
+    "author": "jestar",
+    "license": "CC0-1.0",
+    "sourceUrl": "https://opengameart.org/content/a-simple-trifle",
+    "downloadUrl": "https://opengameart.org/sites/default/files/ASimpleTrifle_0.ogg",
+    "originalSha256": "40353641ca8e968d63342c655bb3972a87382d2b808a07b550e849daa4a593bb"
+  },
+  {
+    "id": "music-piano-sad",
+    "name": "钢琴·感伤回忆",
+    "instrument": "钢琴",
+    "traits": [
+      "忧伤",
+      "回忆"
+    ],
+    "description": "Cursed Light，抒情独奏钢琴主题。",
+    "author": "Cethiel",
+    "license": "CC0-1.0",
+    "sourceUrl": "https://opengameart.org/content/cursed-light",
+    "downloadUrl": "https://opengameart.org/sites/default/files/Cursed%20Light%20-%20Lossless%20FLAC_0.flac",
+    "originalSha256": "5f96aa941e7f31f8d26cf76b49c3422d0701cf2a29bf6ad34d6808e58d7ac90d"
+  },
+  {
+    "id": "music-strings-ending",
+    "name": "弦乐与钢琴·片尾",
+    "instrument": "小提琴 / 中提琴 / 钢琴",
+    "traits": [
+      "抒情",
+      "片尾"
+    ],
+    "description": "Ending Scene 管弦乐版本，以弦乐和钢琴塑造片尾情绪。",
+    "author": "nene",
+    "license": "CC0-1.0",
+    "sourceUrl": "https://opengameart.org/content/ending-scene",
+    "downloadUrl": "https://opengameart.org/sites/default/files/ending_scene_orchestral.wav",
+    "originalSha256": "3e0702b3ec4c48eaee852174e2cbb5252655704b47fb716aa9ccb8df7e910a9c"
+  },
+  {
+    "id": "music-cello-home",
+    "name": "大提琴与钢琴·归途",
+    "instrument": "大提琴 / 钢琴",
+    "traits": [
+      "思念",
+      "悲伤"
+    ],
+    "description": "I Want to Go Home，钢琴、大提琴与少量合唱的抒情配乐。",
+    "author": "Eldritch Grim；原曲 Rafael Krux",
+    "license": "CC0-1.0",
+    "sourceUrl": "https://opengameart.org/content/i-want-to-go-home",
+    "downloadUrl": "https://opengameart.org/sites/default/files/i_want_to_go_home.wav",
+    "originalSha256": "393d7a18afcd24123c027ec9df56c99b8c0e4e5c8022e510d4588ec5a70725d3"
+  },
+  {
+    "id": "music-flute-lute",
+    "name": "长笛与鲁特琴·旅人",
+    "instrument": "长笛 / 鲁特琴",
+    "traits": [
+      "田园",
+      "悠闲"
+    ],
+    "description": "The Bard’s Tale，中世纪风格器乐主题。",
+    "author": "RandomMind",
+    "license": "CC0-1.0",
+    "sourceUrl": "https://opengameart.org/content/medieval-the-bards-tale",
+    "downloadUrl": "https://opengameart.org/sites/default/files/The_Bards_Tale.mp3",
+    "originalSha256": "6e93e8e8215bea17a209c321c182111058e024c53e3ad775ce1481ca1d1fcfc2"
+  },
+  {
+    "id": "music-orchestra-hero",
+    "name": "铜管弦乐·英雄归来",
+    "instrument": "管弦乐 / 铜管 / 小提琴",
+    "traits": [
+      "史诗",
+      "凯旋"
+    ],
+    "description": "Hero’s Reprise，管弦乐、打击乐与合唱的短主题。",
+    "author": "nene",
+    "license": "CC0-1.0",
+    "sourceUrl": "https://opengameart.org/content/heros-reprise",
+    "downloadUrl": "https://opengameart.org/sites/default/files/hero_reprise_0.wav",
+    "originalSha256": "d1922378014f4b19ca435450db033b6fbd16f1f6d0881df5189c0d6405e36a66"
+  },
+  {
+    "id": "music-orchestra-mystery",
+    "name": "管弦乐·奇幻秘境",
+    "instrument": "管弦乐",
+    "traits": [
+      "奇幻",
+      "史诗"
+    ],
+    "description": "Arcanum，奇幻叙事管弦配乐。",
+    "author": "vitalezzz",
+    "license": "CC0-1.0",
+    "sourceUrl": "https://opengameart.org/content/arcanum",
+    "downloadUrl": "https://opengameart.org/sites/default/files/arcanum_0.mp3",
+    "originalSha256": "07069ece85e0edf531e2add88ca9974ec0aa7370a39312244d26de6f01250e12"
+  },
+  {
+    "id": "opera-jingju-dan-stage",
+    "name": "京剧·旦角舞台唱段",
+    "instrument": "人声 / 板鼓",
+    "traits": [
+      "中国戏曲",
+      "京剧",
+      "唱段"
+    ],
+    "description": "北京正乙祠戏楼的旦角唱段与板鼓片段，保留戏台空间声，适合戏楼背景。",
+    "author": "xserra",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://freesound.org/people/xserra/sounds/162046/",
+    "downloadUrl": "https://cdn.freesound.org/previews/162/162046_43-hq.mp3",
+    "collection": "opera",
+    "operaGenre": "京剧",
+    "materialType": "唱段",
+    "sampleRate": 48000,
+    "provenance": "现场录音，保留演唱、器乐及原有空间声；全长转为双声道48kHz WAV，另提供最长30秒试听。",
+    "originalSha256": "e2f19fe73931d0b9f9b24db7e7907867a64455207969f07e86b67f990b787b2c"
+  },
+  {
+    "id": "opera-jingju-dan-rehearsal",
+    "name": "京剧·旦角合练",
+    "instrument": "人声 / 鼓板",
+    "traits": [
+      "中国戏曲",
+      "京剧",
+      "唱腔排练"
+    ],
+    "description": "戏曲学院旦角唱腔课堂合练，包含教师打拍与排练空间声。",
+    "author": "xserra",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://freesound.org/people/xserra/sounds/320218/",
+    "downloadUrl": "https://cdn.freesound.org/previews/320/320218_43-hq.mp3",
+    "collection": "opera",
+    "operaGenre": "京剧",
+    "materialType": "唱腔排练",
+    "sampleRate": 48000,
+    "provenance": "现场录音，保留演唱、器乐及原有空间声；全长转为双声道48kHz WAV，另提供最长30秒试听。",
+    "originalSha256": "62334505c24e37d86816b3e4df22727f4071e46f8a4ab3ddadfe79353131d412"
+  },
+  {
+    "id": "opera-jingju-jingerhu",
+    "name": "京剧·京二胡排练",
+    "instrument": "京二胡 / 人声",
+    "traits": [
+      "中国戏曲",
+      "京剧",
+      "器乐排练"
+    ],
+    "description": "京二胡课堂演奏，包含教师示唱与打拍；适合梨园排练场景，不是纯器乐独奏。",
+    "author": "xserra",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://freesound.org/people/xserra/sounds/320221/",
+    "downloadUrl": "https://cdn.freesound.org/previews/320/320221_43-hq.mp3",
+    "collection": "opera",
+    "operaGenre": "京剧",
+    "materialType": "器乐排练",
+    "sampleRate": 48000,
+    "provenance": "现场录音，保留演唱、器乐及原有空间声；全长转为双声道48kHz WAV，另提供最长30秒试听。",
+    "originalSha256": "14a59dfda2dbd134a91f0f55a9d087c87a8f9a0a7294f2ba7ad52f3e5a218776"
+  },
+  {
+    "id": "opera-jingju-yueqin",
+    "name": "京剧·月琴排练",
+    "instrument": "月琴 / 人声",
+    "traits": [
+      "中国戏曲",
+      "京剧",
+      "器乐排练"
+    ],
+    "description": "月琴课堂演奏，包含教师示唱与打拍，适合戏班后台及教学场景。",
+    "author": "xserra",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://freesound.org/people/xserra/sounds/320220/",
+    "downloadUrl": "https://cdn.freesound.org/previews/320/320220_43-hq.mp3",
+    "collection": "opera",
+    "operaGenre": "京剧",
+    "materialType": "器乐排练",
+    "sampleRate": 48000,
+    "provenance": "现场录音，保留演唱、器乐及原有空间声；全长转为双声道48kHz WAV，另提供最长30秒试听。",
+    "originalSha256": "72fe766fc718c408955d29cc5045246517fa34b5c91c9b6694693562cca87826"
+  },
+  {
+    "id": "opera-jingju-percussion",
+    "name": "京剧·锣鼓合奏",
+    "instrument": "板鼓 / 大锣 / 小锣 / 铙钹",
+    "traits": [
+      "中国戏曲",
+      "京剧",
+      "锣鼓"
+    ],
+    "description": "戏曲学院锣鼓合奏课堂录音，适合戏台开场、动作过场及排练氛围。",
+    "author": "xserra",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://freesound.org/people/xserra/sounds/320216/",
+    "downloadUrl": "https://cdn.freesound.org/previews/320/320216_43-hq.mp3",
+    "collection": "opera",
+    "operaGenre": "京剧",
+    "materialType": "锣鼓",
+    "sampleRate": 48000,
+    "provenance": "现场录音，保留演唱、器乐及原有空间声；全长转为双声道48kHz WAV，另提供最长30秒试听。",
+    "originalSha256": "e71392c973fb2087ed07ec83aeab95673520e491b380e09f4ac5a292ed5f7f87"
+  },
+  {
+    "id": "opera-yuju-folk",
+    "name": "豫剧·民间演唱",
+    "instrument": "人声 / 戏曲伴奏",
+    "traits": [
+      "中国戏曲",
+      "豫剧",
+      "现场"
+    ],
+    "description": "河南漯河民间豫剧演唱现场，包含人声和环境氛围，适合街巷戏台背景。",
+    "author": "2356877332",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://archive.org/details/aporee_54443_62275",
+    "downloadUrl": "https://archive.org/download/aporee_54443_62275/LocalpeopleperformingYuOpera.mp3",
+    "collection": "opera",
+    "operaGenre": "豫剧",
+    "materialType": "现场唱段",
+    "sampleRate": 48000,
+    "provenance": "下载来源发布的原始MP3文件，保留演唱与现场环境声；全长转为双声道48kHz WAV，另提供最长30秒试听。",
+    "originalSha256": "94ba9b6bf536265a057dcf0b96ad5faab524eaf05d27a07e4ed9dbb713428a15"
+  },
+  {
+    "id": "opera-gezaixi-beitou",
+    "name": "歌仔戏·北投现场",
+    "instrument": "人声 / 戏曲伴奏",
+    "traits": [
+      "中国戏曲",
+      "歌仔戏",
+      "现场"
+    ],
+    "description": "台北北投歌仔戏演出现场，保留剧场唱腔、伴奏及环境氛围。",
+    "author": "Wu,Tsan-Cheng",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://archive.org/details/aporee_18909_21924",
+    "downloadUrl": "https://archive.org/download/aporee_18909_21924/SoundMap201307215.mp3",
+    "collection": "opera",
+    "operaGenre": "歌仔戏",
+    "materialType": "现场唱段",
+    "sampleRate": 48000,
+    "provenance": "下载来源发布的原始MP3文件，保留演唱与现场环境声；全长转为双声道48kHz WAV，另提供最长30秒试听。",
+    "originalSha256": "2ae83164020e83ea5b5e4ac699ac21a4513bd228262b735efda458c9137ee164"
+  },
+  {
+    "id": "opera-gezaixi-kaohsiung",
+    "name": "歌仔戏·高雄收场",
+    "instrument": "人声 / 戏曲伴奏",
+    "traits": [
+      "中国戏曲",
+      "歌仔戏",
+      "现场"
+    ],
+    "description": "高雄民间歌仔戏演出现场，末尾含主持说明，适合戏台收场氛围。",
+    "author": "Wu,Tsan-Cheng",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://archive.org/details/aporee_17131_19941",
+    "downloadUrl": "https://archive.org/download/aporee_17131_19941/SoundMap2012041124.mp3",
+    "collection": "opera",
+    "operaGenre": "歌仔戏",
+    "materialType": "现场唱段",
+    "sampleRate": 48000,
+    "provenance": "下载来源发布的原始MP3文件，保留演唱与现场环境声；全长转为双声道48kHz WAV，另提供最长30秒试听。",
+    "originalSha256": "9fb3ac19fbd9ea09803285f66fd49d7e5fbc93d4bc07f02e81ecce348a04bd3f"
+  }
+]

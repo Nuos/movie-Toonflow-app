@@ -1,0 +1,17 @@
+[Unit]
+Description=Toonflow to local ComfyUI H3 adapter
+After=network.target llmspace-comfyui.service
+Wants=llmspace-comfyui.service
+
+[Service]
+Type=simple
+WorkingDirectory=/home/ubuntu/workspace/project/nuos/movie-Toonflow-app
+Environment=PYTHONDONTWRITEBYTECODE=1
+ExecStart=/home/ubuntu/llmspace/comfyui/.venv/bin/python local/bridge.py
+Restart=on-failure
+RestartSec=5
+StandardOutput=append:/home/ubuntu/workspace/project/nuos/movie-Toonflow-app/local/logs/h3-bridge.log
+StandardError=append:/home/ubuntu/workspace/project/nuos/movie-Toonflow-app/local/logs/h3-bridge.log
+
+[Install]
+WantedBy=default.target

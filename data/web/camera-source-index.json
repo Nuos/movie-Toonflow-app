@@ -1,0 +1,376 @@
+{
+  "sources": [
+    {
+      "id": "VhTxVGw0Cms",
+      "title": "40 种 AI 视频镜头与运镜：官方描述章节索引",
+      "author": "真探玩赚AI",
+      "url": "https://www.youtube.com/watch?v=VhTxVGw0Cms",
+      "evidence": "已核对 YouTube 官方元资料与公开描述中的 40 项章节、作者及发布日期（2026-01-20）。时间来自作者描述，未观看画面，未取得字幕，也未进行本地生成验收。名称作简短标准化；技能映射与使用要求属于产品编排。",
+      "entries": [
+        {
+          "index": 1,
+          "timestamp": "00:48",
+          "title": "缓慢推近",
+          "skillIds": [
+            "push_in"
+          ],
+          "notes": "机位前移；对应既有缓推概念，不能等同固定机位变焦。"
+        },
+        {
+          "index": 2,
+          "timestamp": "01:09",
+          "title": "缓慢后拉",
+          "skillIds": [
+            "pull_out"
+          ],
+          "notes": "机位后退；对应既有后拉概念。"
+        },
+        {
+          "index": 3,
+          "timestamp": "01:26",
+          "title": "快速推近",
+          "skillIds": [
+            "push_in_fast"
+          ],
+          "notes": "推近的速度变体；具体启动、幅度和落点需要另行设计。"
+        },
+        {
+          "index": 4,
+          "timestamp": "01:42",
+          "title": "滑动变焦",
+          "skillIds": [
+            "dolly_zoom"
+          ],
+          "notes": "按描述中的眩晕变焦归入机位运动与焦距补偿组合；未验证片中实现。"
+        },
+        {
+          "index": 5,
+          "timestamp": "02:18",
+          "title": "微观尺度深入",
+          "skillIds": [
+            "macro_dive"
+          ],
+          "notes": "虚拟尺度转换；不是普通实拍推近或已验证的微距光学。"
+        },
+        {
+          "index": 6,
+          "timestamp": "02:36",
+          "title": "宇宙至街道的尺度转换",
+          "skillIds": [
+            "cosmic_dive"
+          ],
+          "notes": "跨尺度虚拟路径；需自行明确层级、连接锚点与落点。"
+        },
+        {
+          "index": 7,
+          "timestamp": "02:52",
+          "title": "过肩构图",
+          "skillIds": [
+            "angle_ots"
+          ],
+          "notes": "机位与人物空间关系；不自动增加摄影机运动。"
+        },
+        {
+          "index": 8,
+          "timestamp": "03:11",
+          "title": "鱼眼监控视角",
+          "skillIds": [
+            "lens_fisheye"
+          ],
+          "notes": "光学外观与视角；不能当成一条移动路线。"
+        },
+        {
+          "index": 9,
+          "timestamp": "03:31",
+          "title": "移出遮挡后的揭示",
+          "skillIds": [
+            "truck_left",
+            "truck_right"
+          ],
+          "notes": "横移的揭示用途；来源名称未指定左或右，方向需用户选择。"
+        },
+        {
+          "index": 10,
+          "timestamp": "03:48",
+          "title": "穿行进入并揭示",
+          "skillIds": [
+            "fpv_flythrough",
+            "virtual_pass"
+          ],
+          "notes": "描述未明确穿过开口还是实体；真实通道与虚拟穿越应由用户区分。"
+        },
+        {
+          "index": 11,
+          "timestamp": "04:05",
+          "title": "从虚焦到清晰",
+          "skillIds": [
+            "focus_reveal"
+          ],
+          "notes": "对焦揭示；不等于变焦或机位前移。"
+        },
+        {
+          "index": 12,
+          "timestamp": "04:24",
+          "title": "前后景转焦",
+          "skillIds": [
+            "focus_rack"
+          ],
+          "notes": "焦点变化；需明确两个目标及先后顺序。"
+        },
+        {
+          "index": 13,
+          "timestamp": "04:48",
+          "title": "原地上仰",
+          "skillIds": [
+            "tilt_up"
+          ],
+          "notes": "改变朝向；不等于机位整体升高。"
+        },
+        {
+          "index": 14,
+          "timestamp": "05:09",
+          "title": "原地下俯",
+          "skillIds": [
+            "tilt_down"
+          ],
+          "notes": "改变朝向；不等于机位整体下降。"
+        },
+        {
+          "index": 15,
+          "timestamp": "05:26",
+          "title": "向左平移",
+          "skillIds": [
+            "truck_left"
+          ],
+          "notes": "横向位移；不等于原地左摇。"
+        },
+        {
+          "index": 16,
+          "timestamp": "05:43",
+          "title": "向右平移",
+          "skillIds": [
+            "truck_right"
+          ],
+          "notes": "横向位移；不等于原地右摇。"
+        },
+        {
+          "index": 17,
+          "timestamp": "05:59",
+          "title": "半周环绕",
+          "skillIds": [
+            "orbit_half"
+          ],
+          "notes": "描述明确半周范围；不同于默认小幅弧移，需检查中途空间与轴线。"
+        },
+        {
+          "index": 18,
+          "timestamp": "06:17",
+          "title": "快速整周环绕",
+          "skillIds": [
+            "orbit_full_fast"
+          ],
+          "notes": "描述明确一整周；方向、速度和可读停留仍需设计。"
+        },
+        {
+          "index": 19,
+          "timestamp": "06:34",
+          "title": "缓慢弧移",
+          "skillIds": [
+            "arc_left",
+            "arc_right"
+          ],
+          "notes": "对应有限弧线环绕；来源名称未指定左右。"
+        },
+        {
+          "index": 20,
+          "timestamp": "06:52",
+          "title": "机位垂直下降",
+          "skillIds": [
+            "pedestal_down"
+          ],
+          "notes": "整体高度变化；与原地下俯分开。"
+        },
+        {
+          "index": 21,
+          "timestamp": "07:11",
+          "title": "机位垂直上升",
+          "skillIds": [
+            "pedestal_up"
+          ],
+          "notes": "整体高度变化；与原地上仰分开。"
+        },
+        {
+          "index": 22,
+          "timestamp": "07:28",
+          "title": "摇臂升高至俯视",
+          "skillIds": [
+            "crane_up_overhead"
+          ],
+          "notes": "升降与朝向的组合；不能直接当作既有升高后拉的相同路径。"
+        },
+        {
+          "index": 23,
+          "timestamp": "07:45",
+          "title": "摇臂下降至眼平",
+          "skillIds": [
+            "crane_down_eye"
+          ],
+          "notes": "以眼平为结束关系的组合路径；需明确起点高度和终点。"
+        },
+        {
+          "index": 24,
+          "timestamp": "08:03",
+          "title": "固定机位变焦拉近",
+          "skillIds": [
+            "zoom_in"
+          ],
+          "notes": "对应既有变焦拉近；机位保持，取景范围收窄。"
+        },
+        {
+          "index": 25,
+          "timestamp": "08:25",
+          "title": "固定机位变焦拉远",
+          "skillIds": [
+            "zoom_out"
+          ],
+          "notes": "补充与既有变焦拉近相反的光学方向。"
+        },
+        {
+          "index": 26,
+          "timestamp": "08:44",
+          "title": "瞬时冲击变焦",
+          "skillIds": [
+            "snap_zoom_in"
+          ],
+          "notes": "变焦速度变体；描述名称未明确方向，产品预设方向属于编排。"
+        },
+        {
+          "index": 27,
+          "timestamp": "09:00",
+          "title": "高空掠过",
+          "skillIds": [
+            "drone_flyover"
+          ],
+          "notes": "航拍路径；需明确高度关系、经过的地标和终点。"
+        },
+        {
+          "index": 28,
+          "timestamp": "09:19",
+          "title": "航拍升高揭示",
+          "skillIds": [
+            "drone_reveal_rise"
+          ],
+          "notes": "垂直上升的航拍情境变体；不应把载具名称当作独立运动机制。"
+        },
+        {
+          "index": 29,
+          "timestamp": "09:40",
+          "title": "宽半径航拍环绕",
+          "skillIds": [
+            "drone_orbit"
+          ],
+          "notes": "环绕的空间尺度变体；需确定中心、半径意图和角度范围。"
+        },
+        {
+          "index": 30,
+          "timestamp": "09:57",
+          "title": "顶视缓慢旋转",
+          "skillIds": [
+            "topdown_rotate"
+          ],
+          "notes": "顶视角与画面旋转组合；旋转轴、方向和幅度需明示，不能默认为环绕主体。"
+        },
+        {
+          "index": 31,
+          "timestamp": "10:15",
+          "title": "高速航拍俯冲",
+          "skillIds": [
+            "drone_dive"
+          ],
+          "notes": "航拍下降路径与速度组合；需要通道、避让与减速落点。"
+        },
+        {
+          "index": 32,
+          "timestamp": "10:32",
+          "title": "手持纪实感",
+          "skillIds": [
+            "handheld_breath"
+          ],
+          "notes": "稳定方式；与主运镜分开设置，不用随机大幅抖动代替路径。"
+        },
+        {
+          "index": 33,
+          "timestamp": "10:51",
+          "title": "向左甩摇衔接",
+          "skillIds": [
+            "whip_pan_left"
+          ],
+          "notes": "补充左向甩摇；来源提到转场，但单镜甩摇不自动产生剪辑或场景切换。"
+        },
+        {
+          "index": 34,
+          "timestamp": "11:09",
+          "title": "倾斜地平线构图",
+          "skillIds": [
+            "angle_dutch"
+          ],
+          "notes": "构图倾角；不自动解释为持续滚转。"
+        },
+        {
+          "index": 35,
+          "timestamp": "11:27",
+          "title": "前方倒退领拍",
+          "skillIds": [
+            "tracking_front"
+          ],
+          "notes": "跟随关系的方向变体；主体前进而摄影机位于其前方后退。"
+        },
+        {
+          "index": 36,
+          "timestamp": "11:47",
+          "title": "后方尾随跟拍",
+          "skillIds": [
+            "tracking_back"
+          ],
+          "notes": "跟随关系的方向变体；需保持人物朝向和空间锚点。"
+        },
+        {
+          "index": 37,
+          "timestamp": "12:03",
+          "title": "平行侧向跟拍",
+          "skillIds": [
+            "tracking_side"
+          ],
+          "notes": "跟随关系的侧向变体；主体运动与摄影机运动分别说明。"
+        },
+        {
+          "index": 38,
+          "timestamp": "12:20",
+          "title": "第一人称步行",
+          "skillIds": [
+            "pov_walk"
+          ],
+          "notes": "主观视点与步行节奏组合；不等同第一人称飞行穿行。"
+        },
+        {
+          "index": 39,
+          "timestamp": "12:38",
+          "title": "自拍视角（原称死亡视角）",
+          "skillIds": [
+            "angle_selfie_reference"
+          ],
+          "notes": "作者名称已核实，但具体角度与路线未获画面或字幕确认；宜保留为学习条目，不猜测精确几何。"
+        },
+        {
+          "index": 40,
+          "timestamp": "12:59",
+          "title": "高空俯视跟随",
+          "skillIds": [
+            "topdown_follow"
+          ],
+          "notes": "高机位、俯视与跟随的组合；需明确主体路线及相机相对位置。"
+        }
+      ]
+    }
+  ]
+}

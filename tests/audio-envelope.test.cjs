@@ -1,0 +1,11 @@
+const assert=require('node:assert/strict');
+const {apply}=require('../data/web/workflow-audio-envelope.js');
+const source=Float32Array.from({length:100},()=>1);
+const [out]=apply([source],100,{duration:1,volume:.2,fadeIn:.2,fadeOut:.2});
+assert.equal(out[0],0);assert.equal(out[99],0);assert.ok(Math.abs(out[10]-.1)<1e-6);assert.ok(Math.abs(out[50]-.2)<1e-6);assert.equal(source[0],1);
+const [fast]=apply([source],100,{duration:.5,playbackRate:2,fadeIn:.1,fadeOut:.1});assert.equal(fast.length,100);assert.ok(Math.abs(fast[10]-.5)<1e-6);assert.equal(fast[99],0);
+assert.equal(apply([source],100,{duration:.25})[0].length,25);
+assert.ok(apply([source],100,{duration:1,volume:0})[0].every(v=>v===0));
+assert.ok(apply([source],100,{duration:1,fadeIn:4,fadeOut:4})[0].every(v=>Number.isFinite(v)&&v>=0&&v<=1));
+assert.throws(()=>apply([source],0,{duration:1}));
+console.log('PASS: sample-accurate fades, gain applied once, immutable source, playback-rate timing, truncation and mute');

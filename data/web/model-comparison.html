@@ -1,0 +1,454 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Toonflow 本地文本模型比较</title><style>
+body{margin:0;background:#f4f5f7;color:#1d2530;font:16px/1.6 system-ui,sans-serif}main{max-width:1120px;margin:auto;padding:40px 24px}h1{font-size:32px;margin:0}h2{font-size:22px}small,.muted{color:#586778}section{background:white;padding:24px;margin:24px 0;border-radius:12px;border:1px solid #dbe1e8}.table{overflow-x:auto}table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:14px 12px;border-bottom:1px solid #e4e8ed;white-space:nowrap}th{font-size:13px;color:#596879}.ok{color:#147b55}.bad{color:#a74b10}details{border-top:1px solid #e4e8ed;padding:12px 0}summary{cursor:pointer;font-weight:600}summary span{display:inline-block;width:80px}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f4f6f9;padding:18px;font:14px/1.7 ui-monospace,monospace}a{color:#154fd7}.tag{font-size:13px;letter-spacing:2px;color:#154fd7;font-weight:700}.note{background:#fff8e7;border:1px solid #efd59b;padding:16px;border-radius:8px}video{max-width:100%;max-height:330px;border-radius:8px}
+</style><main><div class="tag">RTX 5090 · 本地实测</div><h1>Toonflow 文本模型比较</h1><p class="muted">同一套13项工作流任务 · Q4_K_M · 32K上下文 · 单并发<br>更新时间：2026-09-28T14:17:52-09:00</p><section><div class="table"><table><thead><tr><th>模型</th><th>权重 GiB</th><th>通过</th><th>有效 token/s</th><th>首文本 ms</th><th>显存峰值 GiB</th><th>状态</th></tr></thead><tbody><tr><td>Qwen3.5 9B</td><td>5.29</td><td>7/13</td><td>202.8</td><td>26.7</td><td>7.49</td><td>测试完成</td></tr><tr><td>Qwen3.5 27B</td><td>15.59</td><td>11/13</td><td>71.6</td><td>80.4</td><td>18.3</td><td>测试完成</td></tr><tr><td>Qwen3 30B-A3B Instruct</td><td>17.28</td><td>10/13</td><td>298.8</td><td>20.8</td><td>20.84</td><td>测试完成</td></tr><tr><td>GLM-4.7-Flash</td><td>17.05</td><td>3/13</td><td>222.5</td><td>25.2</td><td>19.88</td><td>测试完成</td></tr></tbody></table></div><p class="muted">速度是3次短文本流式请求的中位数；首文本延迟不含模型冷启动。显存为整卡采样峰值。</p><p class="note">其余模型由后台服务继续下载，完成后自动评估并更新此页。小型工作流验收，不是通用排行榜。严格 JSON、时间线和引用标签的失误会扣分；艺术质量另需人工评审。</p></section><section><h2>文本到视频链路</h2><p>Toonflow 调用本地文本模型生成 H3 首帧提示词，释放文本显存后生成视频，再将 MP4 保存回工作台。已实测成功：约27秒生成5.17秒视频。</p><video controls preload="metadata" src="/oss/1789527897677/video/20774f38-1300-405e-bc44-c4ec4b24cb7b.mp4"></video></section><section><h2>实际 Agent 测试</h2><p>真实页面回归：9B曾越过导演规划阶段并重复读工具；已按角色规范限制导演工具为一次剧本读取，并加入本地Agent循环保护。27B重新测试成功保存导演计划并正常结束，原有分镜、轨道和视频没有改变。当前Agent默认27B，通用辅助使用9B；其余模型完成后再比较。</p></section><section><h2>思考模式补充</h2><p>Qwen3.5 9B 思考模式（官方采样配置）：8/13。短文速度测试中 3/3 次达到6000 token上限仍未输出可见正文。包含思考的 token/s 不能等同于用户看到正文的速度。</p></section><section><h2>Qwen3.5 9B · 原始输出</h2><details><summary><span class="bad">未通过</span> arithmetic</summary><p>{&quot;strict_json&quot;: true, &quot;math&quot;: false}</p><pre>{
+  &quot;requested_frames&quot;: 120,
+  &quot;aligned_frames&quot;: 125,
+  &quot;actual_seconds&quot;: 5.21
+}</pre></details><details><summary><span class="ok">通过</span> assets</summary><p>{&quot;strict_json&quot;: true, &quot;exact_assets&quot;: true}</p><pre>{
+  &quot;characters&quot;: [
+    &quot;林小雨&quot;,
+    &quot;周师傅&quot;,
+    &quot;阿宁&quot;
+  ],
+  &quot;locations&quot;: [
+    &quot;钟表店&quot;,
+    &quot;巷口&quot;
+  ],
+  &quot;props&quot;: [
+    &quot;怀表&quot;,
+    &quot;螺丝刀&quot;,
+    &quot;红伞&quot;
+  ]
+}</pre></details><details><summary><span class="ok">通过</span> continuity</summary><p>{&quot;strict_json&quot;: true, &quot;conflicts&quot;: true}</p><pre>{
+  &quot;bad_shot_ids&quot;: [2, 4],
+  &quot;reasons&quot;: [
+    &quot;镜2中雨衣颜色为红色，与设定中‘蓝色雨衣’冲突。&quot;,
+    &quot;镜4中地点为车站且时间为白天，与设定中‘唯一地点钟表店’及‘夜晚’冲突。&quot;
+  ]
+}</pre></details><details><summary><span class="bad">未通过</span> dialogue</summary><p>{&quot;strict_json&quot;: true, &quot;turns&quot;: false, &quot;quote&quot;: true, &quot;short_lines&quot;: true}</p><pre>{
+  &quot;lines&quot;: [
+    {
+      &quot;speaker&quot;: &quot;林小雨&quot;,
+      &quot;text&quot;: &quot;师傅，这路太黑看不清。&quot;
+    },
+    {
+      &quot;speaker&quot;: &quot;周师傅&quot;,
+      &quot;text&quot;: &quot;走慢一点，才听得见。&quot;
+    },
+    {
+      &quot;speaker&quot;: &quot;林小雨&quot;,
+      &quot;text&quot;: &quot;好，我跟着您的脚步声。&quot;
+    }
+  ]
+}</pre></details><details><summary><span class="bad">未通过</span> h3_i2v</summary><p>{&quot;strict_json&quot;: true, &quot;fields&quot;: true, &quot;first_frame&quot;: false, &quot;no_music&quot;: true, &quot;english&quot;: true}</p><pre>{
+  &quot;integrated_multimodal_description&quot;: &quot;For the target video, at 0.00 seconds into the target video, a single yellow leaf resting on a mossy stone is fully referenced. The background features a dense forest with a flowing stream. The camera remains static, the leaf stays motionless, while only the water in the stream moves.&quot;,
+  &quot;overall_soundscape&quot;: &quot;Natural ambient sound of flowing water over stones, crisp forest atmosphere, no music, no dialogue.&quot;,
+  &quot;non_diegetic_music&quot;: &quot;None&quot;
+}</pre></details><details><summary><span class="bad">未通过</span> h3_ref</summary><p>{&quot;strict_json&quot;: true, &quot;fields&quot;: false, &quot;labels&quot;: false, &quot;quote&quot;: true}</p><pre>{
+  &quot;subject_definitions&quot;: [
+    &quot;Subject 1: Lin Xiaoyu, a young girl wearing a blue raincoat&quot;,
+    &quot;Subject 2: A silver pocket watch&quot;
+  ],
+  &quot;summary&quot;: &quot;Lin Xiaoyu in a blue raincoat holds up a silver pocket watch in a clock shop and says &#x27;Dad, I heard it.&#x27;&quot;,
+  &quot;retention_analysis&quot;: &quot;The scene is a 5-second continuous shot focusing on the emotional delivery of the line and the visual of the watch.&quot;,
+  &quot;detailed_description&quot;: &quot;In a dimly lit clock shop, Lin Xiaoyu (Subject 1), dressed in a blue raincoat, stands still. She raises her right hand to display a silver pocket watch (Subject 2). Her expression is solemn as she speaks the Chinese line &#x27;爸爸，我听见了。&#x27; (Dad, I heard it.)&quot;,
+  &quot;overall_soundscape&quot;: &quot;Ambient sounds of a quiet clock shop, ticking of clocks, and the clear voice of Lin Xiaoyu speaking Chinese.&quot;,
+  &quot;non_diegetic_music&quot;: &quot;None&quot;
+}</pre></details><details><summary><span class="bad">未通过</span> long_context</summary><p>{&quot;strict_json&quot;: false}</p><pre>{
+  &quot;record&quot;: 087,
+  &quot;item&quot;: &quot;P1131&quot;,
+  &quot;person&quot;: &quot;周师傅&quot;,
+  &quot;locker&quot;: &quot;C11&quot;
+}</pre></details><details><summary><span class="ok">通过</span> revision</summary><p>{&quot;strict_json&quot;: true, &quot;exact_patch&quot;: true}</p><pre>{&quot;shots&quot;:[{&quot;id&quot;:17,&quot;duration&quot;:5,&quot;asset_ids&quot;:[42,99],&quot;prompt&quot;:&quot;雨落在红伞上&quot;},{&quot;id&quot;:18,&quot;duration&quot;:8,&quot;asset_ids&quot;:[42],&quot;prompt&quot;:&quot;林小雨合上怀表&quot;}]}</pre></details><details><summary><span class="bad">未通过</span> shots</summary><p>{&quot;strict_json&quot;: true, &quot;six_shots&quot;: true, &quot;time_continuity&quot;: false, &quot;ids&quot;: true, &quot;place&quot;: true, &quot;dialogue&quot;: false}</p><pre>{
+  &quot;shots&quot;: [
+    {
+      &quot;id&quot;: 1,
+      &quot;start&quot;: 0,
+      &quot;end&quot;: 5,
+      &quot;location&quot;: &quot;钟表店&quot;,
+      &quot;action&quot;: &quot;雨夜，林小雨在昏暗的钟表店内拨开积灰的柜台，从深处取出一块旧怀表，灯光照亮她湿润的脸庞。&quot;,
+      &quot;dialogue&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: 2,
+      &quot;start&quot;: 5,
+      &quot;end&quot;: 9,
+      &quot;location&quot;: &quot;钟表店&quot;,
+      &quot;action&quot;: &quot;林小雨将怀表贴在耳边，周围滴答声被雨声掩盖，她神情专注地聆听。&quot;,
+      &quot;dialogue&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: 3,
+      &quot;start&quot;: 9,
+      &quot;end&quot;: 13,
+      &quot;location&quot;: &quot;钟表店&quot;,
+      &quot;action&quot;: &quot;周师傅从阴影中走出，轻轻按住林小雨的手腕，示意她停下动作。&quot;,
+      &quot;dialogue&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: 4,
+      &quot;start&quot;: 13,
+      &quot;end&quot;: 17,
+      &quot;location&quot;: &quot;钟表店&quot;,
+      &quot;action&quot;: &quot;周师傅目光温和地看着怀表，微微摇头，示意时间流逝的节奏。&quot;,
+      &quot;dialogue&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: 5,
+      &quot;start&quot;: 17,
+      &quot;end&quot;: 23,
+      &quot;location&quot;: &quot;钟表店&quot;,
+      &quot;action&quot;: &quot;周师傅缓缓开口，声音在雨声中显得格外清晰，林小雨停下动作注视着他。&quot;,
+      &quot;dialogue&quot;: &quot;走慢一点，&quot;
+    },
+    {
+      &quot;id&quot;: 6,
+      &quot;start&quot;: 23,
+      &quot;end&quot;: 30,
+      &quot;location&quot;: &quot;钟表店&quot;,
+      &quot;action&quot;: &quot;周师傅说完后半句，林小雨似懂非懂地点头，怀表的滴答声重新变得清晰可闻。&quot;,
+      &quot;dialogue&quot;: &quot;才听得见。&quot;
+    }
+  ]
+}</pre></details><details><summary><span class="ok">通过</span> tool_chain</summary><p>{&quot;strict_json&quot;: true, &quot;call_order&quot;: true, &quot;result_grounded&quot;: true, &quot;arguments&quot;: true, &quot;lookup&quot;: true}</p><pre>{&quot;shot_id&quot;: 731}</pre></details><details><summary><span class="ok">通过</span> tool_direct</summary><p>{&quot;strict_json&quot;: true, &quot;call_order&quot;: true, &quot;result_grounded&quot;: true, &quot;arguments&quot;: true}</p><pre>{&quot;shot_id&quot;: 731}</pre></details><details><summary><span class="ok">通过</span> tool_hold</summary><p>{&quot;strict_json&quot;: true, &quot;call_order&quot;: true, &quot;abstain&quot;: true}</p><pre>{&quot;status&quot;:&quot;need_details&quot;}</pre></details><details><summary><span class="ok">通过</span> unknown</summary><p>{&quot;strict_json&quot;: true, &quot;grounding&quot;: true}</p><pre>{
+  &quot;birth_year&quot;: null,
+  &quot;watch_original_owner&quot;: &quot;林小雨的父亲&quot;,
+  &quot;city&quot;: null
+}</pre></details></section><section><h2>Qwen3.5 27B · 原始输出</h2><details><summary><span class="bad">未通过</span> arithmetic</summary><p>{&quot;strict_json&quot;: true, &quot;math&quot;: false}</p><pre>{
+  &quot;requested_frames&quot;: 120,
+  &quot;aligned_frames&quot;: 125,
+  &quot;actual_seconds&quot;: 5.2083
+}</pre></details><details><summary><span class="ok">通过</span> assets</summary><p>{&quot;strict_json&quot;: true, &quot;exact_assets&quot;: true}</p><pre>{
+  &quot;characters&quot;: [&quot;林小雨&quot;, &quot;周师傅&quot;, &quot;阿宁&quot;],
+  &quot;locations&quot;: [&quot;钟表店&quot;, &quot;巷口&quot;],
+  &quot;props&quot;: [&quot;怀表&quot;, &quot;螺丝刀&quot;, &quot;红伞&quot;]
+}</pre></details><details><summary><span class="ok">通过</span> continuity</summary><p>{&quot;strict_json&quot;: true, &quot;conflicts&quot;: true}</p><pre>{
+  &quot;bad_shot_ids&quot;: [2, 4],
+  &quot;reasons&quot;: [
+    &quot;镜2中林小雨穿红雨衣，与设定中穿蓝色雨衣冲突。&quot;,
+    &quot;镜4中场景为白天车站且怀表在左手，与设定中夜晚钟表店及怀表在右手冲突。&quot;
+  ]
+}</pre></details><details><summary><span class="ok">通过</span> dialogue</summary><p>{&quot;strict_json&quot;: true, &quot;turns&quot;: true, &quot;quote&quot;: true, &quot;short_lines&quot;: true}</p><pre>{
+  &quot;lines&quot;: [
+    {
+      &quot;speaker&quot;: &quot;林小雨&quot;,
+      &quot;text&quot;: &quot;周师傅，这路太陡了。&quot;
+    },
+    {
+      &quot;speaker&quot;: &quot;周师傅&quot;,
+      &quot;text&quot;: &quot;走慢一点，才听得见。&quot;
+    },
+    {
+      &quot;speaker&quot;: &quot;林小雨&quot;,
+      &quot;text&quot;: &quot;原来风里有故事啊。&quot;
+    },
+    {
+      &quot;speaker&quot;: &quot;周师傅&quot;,
+      &quot;text&quot;: &quot;心静了，自然能听见。&quot;
+    }
+  ]
+}</pre></details><details><summary><span class="ok">通过</span> h3_i2v</summary><p>{&quot;strict_json&quot;: true, &quot;fields&quot;: true, &quot;first_frame&quot;: true, &quot;no_music&quot;: true, &quot;english&quot;: true}</p><pre>{
+  &quot;integrated_multimodal_description&quot;: &quot;For the target video, at 0.00 seconds into the target video, &lt;Picture 1&gt; (from [Shot 1]) is fully referenced. A static shot of a single yellow leaf resting on a moss-covered stone, with a forest stream flowing in the background. The camera remains fixed; the leaf is motionless while only the water moves.&quot;,
+  &quot;overall_soundscape&quot;: &quot;Natural ambient sound of flowing water from the stream, recorded on location. No music, no human voices, no artificial effects.&quot;,
+  &quot;non_diegetic_music&quot;: &quot;None&quot;
+}</pre></details><details><summary><span class="bad">未通过</span> h3_ref</summary><p>{&quot;strict_json&quot;: true, &quot;fields&quot;: true, &quot;labels&quot;: false, &quot;quote&quot;: true}</p><pre>{
+  &quot;subject_definitions&quot;: &quot;[Subject 1]: Lin Xiaoyu wearing a blue raincoat; [Subject 2]: A silver pocket watch.&quot;,
+  &quot;summary&quot;: &quot;In a clock shop, Lin Xiaoyu raises a silver pocket watch in her right hand and speaks.&quot;,
+  &quot;retention_analysis&quot;: &quot;The scene focuses on the emotional connection between [Subject 1] and [Subject 2], emphasizing the moment of recognition and the spoken line.&quot;,
+  &quot;detailed_description&quot;: &quot;Inside a dimly lit clock shop filled with ticking clocks, [Subject 1] (Lin Xiaoyu in a blue raincoat) stands holding [Subject 2] (a silver pocket watch) in her right hand, raising it slightly. She looks at the watch with a mix of wonder and sadness, then speaks the Chinese line: &#x27;爸爸，我听见了。&#x27; (Dad, I heard it.). The camera focuses on her face and the watch, capturing the intimate moment.&quot;,
+  &quot;overall_soundscape&quot;: &quot;Background sounds of ticking clocks, subtle ambient noise of the shop, and clear dialogue of [Subject 1] speaking the Chinese line.&quot;,
+  &quot;non_diegetic_music&quot;: &quot;&quot;
+}</pre></details><details><summary><span class="ok">通过</span> long_context</summary><p>{&quot;strict_json&quot;: true, &quot;retrieval&quot;: true}</p><pre>{
+  &quot;record&quot;: 87,
+  &quot;item&quot;: &quot;P1131&quot;,
+  &quot;person&quot;: &quot;周师傅&quot;,
+  &quot;locker&quot;: &quot;C11&quot;
+}</pre></details><details><summary><span class="ok">通过</span> revision</summary><p>{&quot;strict_json&quot;: true, &quot;exact_patch&quot;: true}</p><pre>{&quot;shots&quot;:[{&quot;id&quot;:17,&quot;duration&quot;:5,&quot;asset_ids&quot;:[42,99],&quot;prompt&quot;:&quot;雨落在红伞上&quot;},{&quot;id&quot;:18,&quot;duration&quot;:8,&quot;asset_ids&quot;:[42],&quot;prompt&quot;:&quot;林小雨合上怀表&quot;}]}</pre></details><details><summary><span class="ok">通过</span> shots</summary><p>{&quot;strict_json&quot;: true, &quot;six_shots&quot;: true, &quot;time_continuity&quot;: true, &quot;ids&quot;: true, &quot;place&quot;: true, &quot;dialogue&quot;: true}</p><pre>{
+  &quot;shots&quot;: [
+    {
+      &quot;id&quot;: 1,
+      &quot;start&quot;: 0,
+      &quot;end&quot;: 5,
+      &quot;location&quot;: &quot;钟表店&quot;,
+      &quot;action&quot;: &quot;雨夜，林小雨推门进入钟表店，风铃轻响，店内挂满滴答作响的钟表。&quot;,
+      &quot;dialogue&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: 2,
+      &quot;start&quot;: 5,
+      &quot;end&quot;: 9,
+      &quot;location&quot;: &quot;钟表店&quot;,
+      &quot;action&quot;: &quot;林小雨焦急地走向柜台，周师傅从老花镜上方抬头，目光温和。&quot;,
+      &quot;dialogue&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: 3,
+      &quot;start&quot;: 9,
+      &quot;end&quot;: 14,
+      &quot;location&quot;: &quot;钟表店&quot;,
+      &quot;action&quot;: &quot;周师傅从抽屉深处取出一块旧怀表，轻轻放在林小雨掌心。&quot;,
+      &quot;dialogue&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: 4,
+      &quot;start&quot;: 14,
+      &quot;end&quot;: 19,
+      &quot;location&quot;: &quot;钟表店&quot;,
+      &quot;action&quot;: &quot;林小雨颤抖着打开表盖，指针静止，她眼眶泛红。&quot;,
+      &quot;dialogue&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: 5,
+      &quot;start&quot;: 19,
+      &quot;end&quot;: 24,
+      &quot;location&quot;: &quot;钟表店&quot;,
+      &quot;action&quot;: &quot;周师傅轻拍林小雨肩膀，指向窗外雨声与店内钟摆的共鸣。&quot;,
+      &quot;dialogue&quot;: &quot;走慢一点，才听得见。&quot;
+    },
+    {
+      &quot;id&quot;: 6,
+      &quot;start&quot;: 24,
+      &quot;end&quot;: 30,
+      &quot;location&quot;: &quot;钟表店&quot;,
+      &quot;action&quot;: &quot;林小雨握紧怀表，闭上眼聆听，画面渐暗，只剩雨声与滴答声。&quot;,
+      &quot;dialogue&quot;: &quot;&quot;
+    }
+  ]
+}</pre></details><details><summary><span class="ok">通过</span> tool_chain</summary><p>{&quot;strict_json&quot;: true, &quot;call_order&quot;: true, &quot;result_grounded&quot;: true, &quot;arguments&quot;: true, &quot;lookup&quot;: true}</p><pre>{&quot;shot_id&quot;: 731}</pre></details><details><summary><span class="ok">通过</span> tool_direct</summary><p>{&quot;strict_json&quot;: true, &quot;call_order&quot;: true, &quot;result_grounded&quot;: true, &quot;arguments&quot;: true}</p><pre>{&quot;shot_id&quot;: 731}</pre></details><details><summary><span class="ok">通过</span> tool_hold</summary><p>{&quot;strict_json&quot;: true, &quot;call_order&quot;: true, &quot;abstain&quot;: true}</p><pre>{&quot;status&quot;:&quot;need_details&quot;}</pre></details><details><summary><span class="ok">通过</span> unknown</summary><p>{&quot;strict_json&quot;: true, &quot;grounding&quot;: true}</p><pre>{
+  &quot;birth_year&quot;: null,
+  &quot;watch_original_owner&quot;: &quot;林小雨的父亲&quot;,
+  &quot;city&quot;: null
+}</pre></details></section><section><h2>Qwen3 30B-A3B Instruct · 原始输出</h2><details><summary><span class="bad">未通过</span> arithmetic</summary><p>{&quot;strict_json&quot;: true, &quot;math&quot;: false}</p><pre>{
+  &quot;requested_frames&quot;: 120,
+  &quot;aligned_frames&quot;: 17005,
+  &quot;actual_seconds&quot;: 7.0854
+}</pre></details><details><summary><span class="ok">通过</span> assets</summary><p>{&quot;strict_json&quot;: true, &quot;exact_assets&quot;: true}</p><pre>{
+  &quot;characters&quot;: [&quot;林小雨&quot;, &quot;周师傅&quot;, &quot;阿宁&quot;],
+  &quot;locations&quot;: [&quot;钟表店&quot;, &quot;巷口&quot;],
+  &quot;props&quot;: [&quot;怀表&quot;, &quot;螺丝刀&quot;, &quot;红伞&quot;]
+}</pre></details><details><summary><span class="ok">通过</span> continuity</summary><p>{&quot;strict_json&quot;: true, &quot;conflicts&quot;: true}</p><pre>{
+  &quot;bad_shot_ids&quot;: [2, 4],
+  &quot;reasons&quot;: [
+    &quot;镜2中林小雨穿红雨衣，与设定中蓝色雨衣冲突&quot;,
+    &quot;镜4中场景为白天车站，与设定中夜晚钟表店冲突&quot;
+  ]
+}</pre></details><details><summary><span class="ok">通过</span> dialogue</summary><p>{&quot;strict_json&quot;: true, &quot;turns&quot;: true, &quot;quote&quot;: true, &quot;short_lines&quot;: true}</p><pre>{
+  &quot;lines&quot;: [
+    {
+      &quot;speaker&quot;: &quot;林小雨&quot;,
+      &quot;text&quot;: &quot;周师傅，前面路不好走。&quot;
+    },
+    {
+      &quot;speaker&quot;: &quot;周师傅&quot;,
+      &quot;text&quot;: &quot;走慢一点，才听得见。&quot;
+    },
+    {
+      &quot;speaker&quot;: &quot;林小雨&quot;,
+      &quot;text&quot;: &quot;嗯，我听见风声了。&quot;
+    },
+    {
+      &quot;speaker&quot;: &quot;周师傅&quot;,
+      &quot;text&quot;: &quot;还有雨滴落在叶上的声音。&quot;
+    }
+  ]
+}</pre></details><details><summary><span class="ok">通过</span> h3_i2v</summary><p>{&quot;strict_json&quot;: true, &quot;fields&quot;: true, &quot;first_frame&quot;: true, &quot;no_music&quot;: true, &quot;english&quot;: true}</p><pre>{
+  &quot;integrated_multimodal_description&quot;: &quot;For the target video, at 0.00 seconds into the target video, &lt;Picture 1&gt; (from [Shot 1]) is fully referenced. A single yellow leaf rests motionless on a moss-covered stone, positioned at the center of the frame. The surrounding forest is lush and softly blurred, with a clear stream flowing gently in the background. The water moves continuously, creating subtle ripples and reflections, while the leaf remains perfectly still. The camera is fixed, capturing a serene, natural scene with no movement in the foreground object.&quot;,
+  &quot;overall_soundscape&quot;: &quot;The natural soundscape consists solely of the continuous, gentle flow of the forest stream, with soft gurgling and splashing sounds. No other ambient noises are present. The audio is recorded in high fidelity, preserving the authentic texture of the water movement.&quot;,
+  &quot;non_diegetic_music&quot;: &quot;none&quot;
+}</pre></details><details><summary><span class="bad">未通过</span> h3_ref</summary><p>{&quot;strict_json&quot;: true, &quot;fields&quot;: false, &quot;labels&quot;: false, &quot;quote&quot;: false}</p><pre>{
+  &quot;subject_definitions&quot;: {
+    &quot;Subject 1&quot;: &quot;Lin Xiaoyu in a blue raincoat&quot;,
+    &quot;Subject 2&quot;: &quot;Silver pocket watch&quot;
+  },
+  &quot;summary&quot;: &quot;Lin Xiaoyu, wearing a blue raincoat, raises the silver pocket watch with her right hand inside a clock shop and says in Chinese: &#x27;Dad, I heard it.&#x27;&quot;,
+  &quot;retention_analysis&quot;: &quot;The key visual elements are the blue raincoat, the silver watch, and the intimate gesture of raising the watch while speaking. The emotional core lies in the personal connection to the father, conveyed through the spoken line and the focus on the watch as a symbolic object.&quot;,
+  &quot;detailed_description&quot;: &quot;Lin Xiaoyu stands in a small, dimly lit clock shop filled with antique timepieces. She wears a bright blue raincoat, slightly damp from outside. Her right hand lifts a silver pocket watch to eye level, the metal reflecting soft light from a nearby window. Her expression is tender and focused. The watch has a cracked glass face and a worn leather strap. She speaks clearly in Chinese: &#x27;Dad, I heard it.&#x27; The background features ticking clocks and shelves lined with vintage watches. The scene is shot in close-up, emphasizing her face and the watch.&quot;,
+  &quot;overall_soundscape&quot;: &quot;The ambient sound of multiple clocks ticking in sync, a faint breeze from an open door, and the soft rustle of the raincoat fabric. The spoken line &#x27;Dad, I heard it.&#x27; is clear and emotionally resonant, with natural reverb from the enclosed space.&quot;,
+  &quot;non_diegetic_music&quot;: &quot;None&quot;
+}</pre></details><details><summary><span class="ok">通过</span> long_context</summary><p>{&quot;strict_json&quot;: true, &quot;retrieval&quot;: true}</p><pre>{&quot;record&quot;:87,&quot;item&quot;:&quot;P1131&quot;,&quot;person&quot;:&quot;周师傅&quot;,&quot;locker&quot;:&quot;C11&quot;}</pre></details><details><summary><span class="ok">通过</span> revision</summary><p>{&quot;strict_json&quot;: true, &quot;exact_patch&quot;: true}</p><pre>{&quot;shots&quot;:[{&quot;id&quot;:17,&quot;duration&quot;:5,&quot;asset_ids&quot;:[42,99],&quot;prompt&quot;:&quot;雨落在红伞上&quot;},{&quot;id&quot;:18,&quot;duration&quot;:8,&quot;asset_ids&quot;:[42],&quot;prompt&quot;:&quot;林小雨合上怀表&quot;}]}</pre></details><details><summary><span class="bad">未通过</span> shots</summary><p>{&quot;strict_json&quot;: true, &quot;six_shots&quot;: true, &quot;time_continuity&quot;: false, &quot;ids&quot;: true, &quot;place&quot;: true, &quot;dialogue&quot;: true}</p><pre>{
+  &quot;shots&quot;: [
+    {
+      &quot;id&quot;: 1,
+      &quot;start&quot;: 0,
+      &quot;end&quot;: 5,
+      &quot;location&quot;: &quot;钟表店&quot;,
+      &quot;action&quot;: &quot;林小雨推开店门，雨水顺着她的伞滴落，她环顾布满钟表的昏暗店铺，神情焦急。&quot;,
+      &quot;dialogue&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: 2,
+      &quot;start&quot;: 5,
+      &quot;end&quot;: 9,
+      &quot;location&quot;: &quot;钟表店&quot;,
+      &quot;action&quot;: &quot;她快步走向柜台，手指颤抖地翻找旧抽屉，突然停住，目光落在一只蒙尘的怀表上。&quot;,
+      &quot;dialogue&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: 3,
+      &quot;start&quot;: 9,
+      &quot;end&quot;: 13,
+      &quot;location&quot;: &quot;钟表店&quot;,
+      &quot;action&quot;: &quot;她轻轻拿起怀表，用袖口擦拭表面，表盘上的刻度微微发亮，指针静止不动。&quot;,
+      &quot;dialogue&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: 4,
+      &quot;start&quot;: 13,
+      &quot;end&quot;: 17,
+      &quot;location&quot;: &quot;钟表店&quot;,
+      &quot;action&quot;: &quot;周师傅从后屋走出，站在她身后，目光落在怀表上，神情平静。&quot;,
+      &quot;dialogue&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: 5,
+      &quot;start&quot;: 17,
+      &quot;end&quot;: 23,
+      &quot;location&quot;: &quot;钟表店&quot;,
+      &quot;action&quot;: &quot;周师傅轻声说，声音低沉而清晰，林小雨缓缓抬头，眼中泛起泪光。&quot;,
+      &quot;dialogue&quot;: &quot;走慢一点，才听得见。&quot;
+    },
+    {
+      &quot;id&quot;: 6,
+      &quot;start&quot;: 23,
+      &quot;end&quot;: 30,
+      &quot;location&quot;: &quot;钟表店&quot;,
+      &quot;action&quot;: &quot;林小雨低头凝视怀表，雨声渐远，店内钟表的滴答声仿佛清晰可闻，她轻轻将表贴在耳边。&quot;,
+      &quot;dialogue&quot;: &quot;&quot;
+    }
+  ]
+}</pre></details><details><summary><span class="ok">通过</span> tool_chain</summary><p>{&quot;strict_json&quot;: true, &quot;call_order&quot;: true, &quot;result_grounded&quot;: true, &quot;arguments&quot;: true, &quot;lookup&quot;: true}</p><pre>{&quot;shot_id&quot;: 731}</pre></details><details><summary><span class="ok">通过</span> tool_direct</summary><p>{&quot;strict_json&quot;: true, &quot;call_order&quot;: true, &quot;result_grounded&quot;: true, &quot;arguments&quot;: true}</p><pre>{&quot;shot_id&quot;: 731}</pre></details><details><summary><span class="ok">通过</span> tool_hold</summary><p>{&quot;strict_json&quot;: true, &quot;call_order&quot;: true, &quot;abstain&quot;: true}</p><pre>{&quot;status&quot;:&quot;need_details&quot;}</pre></details><details><summary><span class="ok">通过</span> unknown</summary><p>{&quot;strict_json&quot;: true, &quot;grounding&quot;: true}</p><pre>{&quot;birth_year&quot;:null,&quot;watch_original_owner&quot;:&quot;林小雨的父亲&quot;,&quot;city&quot;:null}</pre></details></section><section><h2>GLM-4.7-Flash · 原始输出</h2><details><summary><span class="bad">未通过</span> arithmetic</summary><p>{&quot;strict_json&quot;: false}</p><pre>```json
+{
+  &quot;requested_frames&quot;: 120,
+  &quot;aligned_frames&quot;: 125,
+  &quot;actual_seconds&quot;: 5.2083
+}
+```</pre></details><details><summary><span class="bad">未通过</span> assets</summary><p>{&quot;strict_json&quot;: false}</p><pre>```json
+{
+  &quot;characters&quot;: [
+    &quot;林小雨&quot;,
+    &quot;周师傅&quot;,
+    &quot;阿宁&quot;
+  ],
+  &quot;locations&quot;: [
+    &quot;钟表店&quot;,
+    &quot;巷口&quot;
+  ],
+  &quot;props&quot;: [
+    &quot;怀表&quot;,
+    &quot;螺丝刀&quot;,
+    &quot;红伞&quot;
+  ]
+}
+```</pre></details><details><summary><span class="bad">未通过</span> continuity</summary><p>{&quot;strict_json&quot;: false}</p><pre>```json
+{
+  &quot;bad_shot_ids&quot;: [2, 4],
+  &quot;reasons&quot;: [
+    &quot;镜2：设定为夜晚，但画面显示她穿红雨衣，与设定中的蓝雨衣冲突。&quot;,
+    &quot;镜4：设定为夜晚钟表店，但画面显示白天车站，且她左手握怀表，与设定中的右手及地点冲突。&quot;
+  ]
+}
+```</pre></details><details><summary><span class="bad">未通过</span> dialogue</summary><p>{&quot;strict_json&quot;: false}</p><pre>```json
+{
+  &quot;lines&quot;: [
+    {
+      &quot;speaker&quot;: &quot;林小雨&quot;,
+      &quot;text&quot;: &quot;师傅，这路太黑了，我有点害怕。&quot;
+    },
+    {
+      &quot;speaker&quot;: &quot;周师傅&quot;,
+      &quot;text&quot;: &quot;走慢一点，才听得见。&quot;
+    },
+    {
+      &quot;speaker&quot;: &quot;林小雨&quot;,
+      &quot;text&quot;: &quot;听得见什么呀？&quot;
+    },
+    {
+      &quot;speaker&quot;: &quot;周师傅&quot;,
+      &quot;text&quot;: &quot;听风的声音。&quot;
+    }
+  ]
+}
+```</pre></details><details><summary><span class="bad">未通过</span> h3_i2v</summary><p>{&quot;strict_json&quot;: false}</p><pre>```json
+{
+  &quot;integrated_multimodal_description&quot;: &quot;For the target video, at 0.00 seconds into the target video, &lt;Picture 1&gt; (from [Shot 1]) is fully referenced. A single yellow leaf rests motionless on a textured mossy stone, set against a serene forest backdrop with a flowing stream in the background. The camera remains fixed, capturing the stillness of the leaf and the gentle movement of the water.&quot;,
+  &quot;overall_soundscape&quot;: &quot;The audio features the continuous, natural sound of flowing water from the stream, creating a tranquil atmosphere.&quot;,
+  &quot;non_diegetic_music&quot;: &quot;None.&quot;
+}
+```</pre></details><details><summary><span class="bad">未通过</span> h3_ref</summary><p>{&quot;strict_json&quot;: false}</p><pre>```json
+{
+  &quot;subject_definitions&quot;: &quot;[Subject 1] is Lin Xiaoyu, a young woman wearing a blue raincoat. [Subject 2] is a silver pocket watch.&quot;,
+  &quot;summary&quot;: &quot;In a clock shop, Lin Xiaoyu holds up a silver pocket watch with her right hand and says, &#x27;Dad, I heard it.&#x27;&quot;,
+  &quot;retention_analysis&quot;: &quot;Subject 1: Blue raincoat, right hand raising the pocket watch. Subject 2: Silver pocket watch. Dialogue: &#x27;爸爸，我听见了。&#x27;. Duration: 5 seconds.&quot;,
+  &quot;detailed_description&quot;: &quot;The camera focuses on Lin Xiaoyu in a blue raincoat standing in a clock shop. She lifts a silver pocket watch with her right hand. Her expression is focused. The background features clock mechanisms. She speaks the Chinese dialogue &#x27;爸爸，我听见了。&#x27;.&quot;,
+  &quot;overall_soundscape&quot;: &quot;The sound of a ticking clock in the background. The dialogue &#x27;爸爸，我听见了。&#x27;.&quot;,
+  &quot;non_diegetic_music&quot;: &quot;None.&quot;
+}
+```</pre></details><details><summary><span class="bad">未通过</span> long_context</summary><p>{&quot;strict_json&quot;: false}</p><pre>```json
+{
+  &quot;record&quot;: 87,
+  &quot;item&quot;: &quot;P1131&quot;,
+  &quot;person&quot;: &quot;周师傅&quot;,
+  &quot;locker&quot;: &quot;C11&quot;
+}
+```</pre></details><details><summary><span class="ok">通过</span> revision</summary><p>{&quot;strict_json&quot;: true, &quot;exact_patch&quot;: true}</p><pre>{&quot;shots&quot;:[{&quot;id&quot;:17,&quot;duration&quot;:5,&quot;asset_ids&quot;:[42,99],&quot;prompt&quot;:&quot;雨落在红伞上&quot;},{&quot;id&quot;:18,&quot;duration&quot;:8,&quot;asset_ids&quot;:[42],&quot;prompt&quot;:&quot;林小雨合上怀表&quot;}]}</pre></details><details><summary><span class="bad">未通过</span> shots</summary><p>{&quot;strict_json&quot;: false}</p><pre>```json
+{
+  &quot;shots&quot;: [
+    {
+      &quot;id&quot;: 1,
+      &quot;start&quot;: 0,
+      &quot;end&quot;: 4,
+      &quot;location&quot;: &quot;钟表店&quot;,
+      &quot;action&quot;: &quot;林小雨推开玻璃门，店内昏黄灯光下，她目光急切地扫视柜台，最终定格在角落的旧木盒上。&quot;,
+      &quot;dialogue&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: 2,
+      &quot;start&quot;: 4,
+      &quot;end&quot;: 8,
+      &quot;location&quot;: &quot;钟表店&quot;,
+      &quot;action&quot;: &quot;林小雨快步上前，颤抖的手指从木盒中取出那块沾着雨水的旧怀表，紧紧握在掌心。&quot;,
+      &quot;dialogue&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: 3,
+      &quot;start&quot;: 8,
+      &quot;end&quot;: 12,
+      &quot;location&quot;: &quot;钟表店&quot;,
+      &quot;action&quot;: &quot;周师傅戴着寸镜，正低头擦拭齿轮，闻声抬头，目光温和地看向林小雨手中的怀表。&quot;,
+      &quot;dialogue&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: 4,
+      &quot;start&quot;: 12,
+      &quot;end&quot;: 16,
+      &quot;location&quot;: &quot;钟表店&quot;,
+      &quot;action&quot;: &quot;林小雨将怀表递过去，眼眶微红，声音哽咽。&quot;,
+      &quot;dialogue&quot;: &quot;爸的表……&quot;
+    },
+    {
+      &quot;id&quot;: 5,
+      &quot;start&quot;: 16,
+      &quot;end&quot;: 20,
+      &quot;location&quot;: &quot;钟表店&quot;,
+      &quot;action&quot;: &quot;周师傅接过怀表，轻轻放在工作台上，拿起镊子熟练地拨动发条。&quot;,
+      &quot;dialogue&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: 6,
+      &quot;start&quot;: 20,
+      &quot;end&quot;: 24,
+      &quot;location&quot;: &quot;钟表店&quot;,
+      &quot;action&quot;: &quot;周师傅停下手中的动作，抬头看向林小雨，语重心长。&quot;,
+      &quot;dialogue&quot;: &quot;走慢一点，才听得见。&quot;
+    }
+  ]
+}
+```</pre></details><details><summary><span class="ok">通过</span> tool_chain</summary><p>{&quot;strict_json&quot;: true, &quot;call_order&quot;: true, &quot;result_grounded&quot;: true, &quot;arguments&quot;: true, &quot;lookup&quot;: true}</p><pre>{&quot;shot_id&quot;: 731}</pre></details><details><summary><span class="ok">通过</span> tool_direct</summary><p>{&quot;strict_json&quot;: true, &quot;call_order&quot;: true, &quot;result_grounded&quot;: true, &quot;arguments&quot;: true}</p><pre>{&quot;shot_id&quot;: 731}</pre></details><details><summary><span class="bad">未通过</span> tool_hold</summary><p>{&quot;strict_json&quot;: false}</p><pre>```json
+{&quot;status&quot;:&quot;need_details&quot;}
+```</pre></details><details><summary><span class="bad">未通过</span> unknown</summary><p>{&quot;strict_json&quot;: false}</p><pre>```json
+{
+  &quot;birth_year&quot;: null,
+  &quot;watch_original_owner&quot;: &quot;林小雨的父亲&quot;,
+  &quot;city&quot;: null
+}
+```</pre></details></section><p class="muted">原始报告：/home/ubuntu/llmspace/text-models/eval<br>测试协议：EVALUATION-PROTOCOL.md · 程序、权重与结果全部保存在本机。</p></main></html>

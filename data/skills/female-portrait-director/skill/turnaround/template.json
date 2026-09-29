@@ -1,0 +1,60 @@
+{
+  "version": "2.1",
+  "templates": {
+    "studio": {
+      "label": "真人棚拍",
+      "style": "真人写实电影定妆摄影，真实皮肤与服装材质",
+      "background": "中性灰无缝摄影棚，柔和接触阴影"
+    },
+    "mythology": {
+      "label": "神话奇幻",
+      "style": "真人写实神话奇幻电影定妆，古典服装的可信材质与结构",
+      "background": "中性灰无缝摄影棚；不自动添加雷电、烟雾或叙事场景"
+    },
+    "historical": {
+      "label": "历史角色",
+      "style": "真人写实历史电影定妆，服装符合用户指定时代",
+      "background": "中性灰无缝摄影棚"
+    },
+    "stylized": {
+      "label": "风格化角色",
+      "style": "用户指定的风格化角色设定，清晰可读的材质和轮廓",
+      "background": "干净中性灰背景"
+    },
+    "xianxia": {
+      "label": "中国古风·修仙玄幻（默认）",
+      "style": "真人写实中国古风修仙玄幻电影定妆，精致丝绸缎面织锦、云纹刺绣、玉饰与金银镶嵌，明净有层次的服装配色；禁止粗麻布、破旧工装、暗灰主色与灰暗粗粝风格",
+      "background": "明亮中性浅灰无缝摄影棚，背景中性不意味着服装灰暗，柔和接触阴影"
+    }
+  },
+  "sections": [
+    "人物身份与面部",
+    "体型与比例",
+    "肤色与皮肤质感",
+    "头发与妆容",
+    "服装",
+    "配饰、道具与鞋履",
+    "气质与风格控制"
+  ],
+  "defaults": {
+    "template": "xianxia",
+    "side": "left",
+    "portrait_fraction": 0.28,
+    "show_info": false,
+    "image_width": 2048,
+    "image_height": 1152,
+    "quality": "2k"
+  },
+  "quality_tiers": {
+    "2k": {
+      "label": "2K",
+      "width": 2048,
+      "height": 1152
+    },
+    "1080p": {
+      "label": "1080p",
+      "width": 1920,
+      "height": 1080
+    }
+  }
+}

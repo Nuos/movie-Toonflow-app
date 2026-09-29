@@ -1,0 +1,13 @@
+import assert from 'node:assert/strict';
+import { portraitEditInstruction } from '../src/utils/portraitEdit';
+const previous = { character: { sections: { '头发与妆容': '黑发，无浓妆。', '服装': '天青长袍' }, negative: '水印' }, settings: { side:'left', show_info:false } };
+const current = structuredClone(previous);
+current.character.sections['头发与妆容'] += '额头添加朱红菱形印记。';
+const edit = portraitEditInstruction(previous,current);
+assert.deepEqual(edit.changes,[{path:'character/sections/头发与妆容',operation:'追加',value:'额头添加朱红菱形印记。'}]);
+assert.ok(!edit.prefix.includes('天青长袍'),'Unchanged fields must not be presented as edit instructions');
+assert.equal(previous.character.sections['头发与妆容'],'黑发，无浓妆。');
+assert.equal(portraitEditInstruction(previous,previous).prefix,'');
+current.settings.side='right';
+assert.deepEqual(portraitEditInstruction(previous,current).changes.at(-1),{path:'settings/side',operation:'替换',value:'right'});
+console.log('PASS: exact field delta, append-only edit, unchanged fields and source preserved');

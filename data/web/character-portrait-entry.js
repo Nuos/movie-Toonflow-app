@@ -1,0 +1,4 @@
+(() => {
+  function install(){if(document.getElementById('character-portrait-entry'))return;const menu=document.querySelector('.menu .itemBox');if(!menu)return;const a=document.createElement('a');a.id='character-portrait-entry';a.href='/character-portrait.html';a.textContent='人物定妆';a.style.cssText='display:block;padding:12px 8px;border:1px solid #789d88;border-radius:8px;background:#254c3a;color:#e9f2ea;text-align:center;text-decoration:none;font:13px system-ui';a.onclick=()=>{const name=document.querySelector('.topMenu .title')?.textContent?.trim();if(name)a.href='/character-portrait.html?projectName='+encodeURIComponent(name);};menu.append(a);}
+  const start=()=>{install();new MutationObserver(install).observe(document.body,{childList:true,subtree:true});};if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
+})();

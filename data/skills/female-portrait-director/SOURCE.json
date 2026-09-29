@@ -1,0 +1,9 @@
+{
+  "source": "/home/ubuntu/workspace/project/aigc-space /liyue-aigc/female-portrait-director",
+  "commit": "8cddecd6786d187688e8e89a1f606540186a962f",
+  "files": {
+    "SKILL.md": "bf9df362a3346cd2961557404a61f652f8e57c510f5e42ff053f2e75da52f7fd",
+    "scripts/turnaround.py": "f9f970a2ed0486f427d7eef1f14aba443c3abffe224b1bcc3d8fcf9783864597",
+    "skill/turnaround/template.json": "292b8ec12f51495ae203bf3daf05895c34dcf9cb52ec80baf684239e4b05f725"
+  }
+}

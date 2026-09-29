@@ -1,0 +1,97 @@
+.devtools
+# dependencies (bun install)
+node_modules
+.vscode
+# output
+out
+dist
+*.tgz
+
+# code coverage
+coverage
+*.lcov
+
+# logs
+logs
+_.log
+report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
+
+# dotenv environment variable files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# caches
+.eslintcache
+.cache
+*.tsbuildinfo
+
+# IntelliJ based IDEs
+.idea
+
+# Finder (MacOS) folder config
+.DS_Store
+
+build/*
+
+upload/*
+uploads/*
+
+db.sqlite
+db.sqlite-shm
+db.sqlite-wal
+
+web/*
+
+*.sqlite
+
+router.ts
+
+database.d.ts
+
+.devtools
+data/oss/*
+data/test.sqlite
+version.txt
+# Private configuration and credentials (never publish)
+.env.*
+*.env
+*.key
+*.pem
+*.p12
+credentials*.json
+secrets*.json
+
+# Runtime data, model weights and local investigation outputs
+/data/models/
+/data/reproduction/
+/pictures/
+/tests/poetry/
+/data/web/poetry-jiangxue
+*.sqlite-*
+*.db
+*.db-*
+*.log
+*.bak
+*.tmp
+*.orig
+__pycache__/
+*.py[cod]
+.pytest_cache/
+/node_modules/
+/local/*
+# Runtime bridge source and workflow templates only
+!/local/bridge.py
+!/local/video_parameters.py
+!/local/h3_optimized_workflows.py
+!/local/h3_workflow_contract.py
+!/local/media_profiles.py
+!/local/reproduction.py
+!/local/z-image-api.json
+!/local/workflows/
+/local/workflows/*
+!/local/workflows/astral-v4-reference.json
+!/local/llmspace-toonflow.service
+!/local/llmspace-toonflow-h3.service

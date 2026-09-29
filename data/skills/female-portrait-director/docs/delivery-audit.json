@@ -1,0 +1,58 @@
+{
+  "scope": "完成模板及两档质量、延期恢复、图片归档和验收流程；用户允许暂不测试图像工具",
+  "legacy_files_unchanged": 29,
+  "unit_tests_passed": 13,
+  "distribution_cli": "实际离线调用成功，默认xianxia、文字关闭、174cm设置通过",
+  "reference_audit": "docs/reference-audit.md：10个本地样本静态审阅，不声称全目录审计",
+  "current_example": "outputs/xucheng-current",
+  "image_results": [
+    {
+      "file": "outputs/botanist-final/sheet-retry.png",
+      "actual_size": [
+        1672,
+        941
+      ],
+      "target_met": false
+    },
+    {
+      "file": "outputs/botanist-final/sheet.png",
+      "actual_size": [
+        1672,
+        941
+      ],
+      "target_met": false
+    },
+    {
+      "file": "outputs/xucheng-current/sheet.png",
+      "actual_size": [
+        1672,
+        941
+      ],
+      "target_met": false
+    },
+    {
+      "file": "outputs/zhouyan-caption/sheet.png",
+      "actual_size": [
+        1672,
+        941
+      ],
+      "target_met": false
+    }
+  ],
+  "remaining": [
+    "实际生成2K/1080p图像的运行验收按用户许可延期；不伪称已通过",
+    "角色一致性与真实区分度仍需要逐图人工验收"
+  ],
+  "decision": "保留内置出图，不追加生成测试。功能交付与真实图像尺寸验收分别记录；历史图片没有达成2K或1080p。",
+  "quality_tiers": {
+    "2k": [
+      2048,
+      1152
+    ],
+    "1080p": [
+      1920,
+      1080
+    ]
+  },
+  "validation_scope": "本轮离线测试含两档设置、延期恢复、错尺寸不可接受、验收状态与历史保留；尺寸测试使用临时合成图，不是出图质量验证"
+}

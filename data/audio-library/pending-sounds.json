@@ -1,0 +1,19 @@
+{
+  "notes": "候选条目未下载，不计入本地素材库或界面可播放数量。",
+  "sounds": [
+    {
+      "name": "黄梅戏·现场唱段",
+      "author": "韦思嘉",
+      "sourceUrl": "https://www.ear0.com/sound/show/soundid-40507",
+      "declaredLicense": "CC0",
+      "status": "源站返回自动访问检查，浏览器无法打开；未取得音频文件。"
+    },
+    {
+      "name": "黄梅戏《女驸马》",
+      "author": "艳火",
+      "sourceUrl": "https://www.ear0.com/sound/show/soundid-40653",
+      "declaredLicense": "CC0",
+      "status": "同一来源站点访问受限；未取得音频文件。"
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "h3-quality-T2VA": {
+    "model": "h3-quality",
+    "mode": "T2VA",
+    "directory": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-quality",
+    "apiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-quality/T2VA.api.json",
+    "uiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-quality/h3-quality-T2VA.json",
+    "image": "/workflow-previews/h3-quality-T2VA.png",
+    "sources": [
+      {
+        "path": "/home/ubuntu/llmspace/avspace/codex/workflows/h3_router.py",
+        "sha256": "f36a2b352901334ef69e4ce18f60ed51e5c67d6e786ddd95b84a67c61996c020"
+      },
+      {
+        "path": "/home/ubuntu/llmspace/avspace/codex/workflows/native_768p_api.json",
+        "sha256": "a61d83675e9955d4e6e1e87dc0d691eff6a082e26543704e0d81bc234fbef2cc"
+      }
+    ]
+  },
+  "h3-quality-I2VA": {
+    "model": "h3-quality",
+    "mode": "I2VA",
+    "directory": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-quality",
+    "apiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-quality/I2VA.api.json",
+    "uiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-quality/h3-quality-I2VA.json",
+    "image": "/workflow-previews/h3-quality-I2VA.png",
+    "sources": [
+      {
+        "path": "/home/ubuntu/llmspace/avspace/codex/workflows/h3_router.py",
+        "sha256": "f36a2b352901334ef69e4ce18f60ed51e5c67d6e786ddd95b84a67c61996c020"
+      },
+      {
+        "path": "/home/ubuntu/llmspace/avspace/codex/workflows/native_768p_api.json",
+        "sha256": "a61d83675e9955d4e6e1e87dc0d691eff6a082e26543704e0d81bc234fbef2cc"
+      }
+    ]
+  },
+  "h3-quality-FL2VA": {
+    "model": "h3-quality",
+    "mode": "FL2VA",
+    "directory": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-quality",
+    "apiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-quality/FL2VA.api.json",
+    "uiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-quality/h3-quality-FL2VA.json",
+    "image": "/workflow-previews/h3-quality-FL2VA.png",
+    "sources": [
+      {
+        "path": "/home/ubuntu/llmspace/avspace/codex/workflows/h3_router.py",
+        "sha256": "f36a2b352901334ef69e4ce18f60ed51e5c67d6e786ddd95b84a67c61996c020"
+      },
+      {
+        "path": "/home/ubuntu/llmspace/avspace/codex/workflows/native_768p_api.json",
+        "sha256": "a61d83675e9955d4e6e1e87dc0d691eff6a082e26543704e0d81bc234fbef2cc"
+      }
+    ]
+  },
+  "h3-reference-quality-Ref2VA": {
+    "model": "h3-reference-quality",
+    "mode": "Ref2VA",
+    "directory": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-reference-quality",
+    "apiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-reference-quality/Ref2VA.api.json",
+    "uiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-reference-quality/h3-reference-quality-Ref2VA.json",
+    "image": "/workflow-previews/h3-reference-quality-Ref2VA.png",
+    "sources": [
+      {
+        "path": "/home/ubuntu/llmspace/avspace/codex/workflows/h3_router.py",
+        "sha256": "f36a2b352901334ef69e4ce18f60ed51e5c67d6e786ddd95b84a67c61996c020"
+      },
+      {
+        "path": "/home/ubuntu/llmspace/avspace/codex/workflows/native_768p_api.json",
+        "sha256": "a61d83675e9955d4e6e1e87dc0d691eff6a082e26543704e0d81bc234fbef2cc"
+      }
+    ]
+  },
+  "h3-fast-sol-T2VA": {
+    "model": "h3-fast-sol",
+    "mode": "T2VA",
+    "directory": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-fast-sol",
+    "apiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-fast-sol/T2VA.api.json",
+    "uiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-fast-sol/h3-fast-sol-T2VA.json",
+    "image": "/workflow-previews/h3-fast-sol-T2VA.png",
+    "sources": [
+      {
+        "path": "/home/ubuntu/llmspace/avspace/codex/workflows/h3_router.py",
+        "sha256": "f36a2b352901334ef69e4ce18f60ed51e5c67d6e786ddd95b84a67c61996c020"
+      },
+      {
+        "path": "/home/ubuntu/llmspace/avspace/codex/workflows/native_768p_api.json",
+        "sha256": "a61d83675e9955d4e6e1e87dc0d691eff6a082e26543704e0d81bc234fbef2cc"
+      }
+    ]
+  },
+  "h3-fast-sol-I2VA": {
+    "model": "h3-fast-sol",
+    "mode": "I2VA",
+    "directory": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-fast-sol",
+    "apiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-fast-sol/I2VA.api.json",
+    "uiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-fast-sol/h3-fast-sol-I2VA.json",
+    "image": "/workflow-previews/h3-fast-sol-I2VA.png",
+    "sources": [
+      {
+        "path": "/home/ubuntu/llmspace/avspace/codex/workflows/h3_router.py",
+        "sha256": "f36a2b352901334ef69e4ce18f60ed51e5c67d6e786ddd95b84a67c61996c020"
+      },
+      {
+        "path": "/home/ubuntu/llmspace/avspace/codex/workflows/native_768p_api.json",
+        "sha256": "a61d83675e9955d4e6e1e87dc0d691eff6a082e26543704e0d81bc234fbef2cc"
+      }
+    ]
+  },
+  "h3-fast-sol-FL2VA": {
+    "model": "h3-fast-sol",
+    "mode": "FL2VA",
+    "directory": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-fast-sol",
+    "apiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-fast-sol/FL2VA.api.json",
+    "uiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-fast-sol/h3-fast-sol-FL2VA.json",
+    "image": "/workflow-previews/h3-fast-sol-FL2VA.png",
+    "sources": [
+      {
+        "path": "/home/ubuntu/llmspace/avspace/codex/workflows/h3_router.py",
+        "sha256": "f36a2b352901334ef69e4ce18f60ed51e5c67d6e786ddd95b84a67c61996c020"
+      },
+      {
+        "path": "/home/ubuntu/llmspace/avspace/codex/workflows/native_768p_api.json",
+        "sha256": "a61d83675e9955d4e6e1e87dc0d691eff6a082e26543704e0d81bc234fbef2cc"
+      }
+    ]
+  },
+  "h3-reference-trt-Ref2VA": {
+    "model": "h3-reference-trt",
+    "mode": "Ref2VA",
+    "directory": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-reference-trt",
+    "apiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-reference-trt/Ref2VA.api.json",
+    "uiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-reference-trt/h3-reference-trt-Ref2VA.json",
+    "image": "/workflow-previews/h3-reference-trt-Ref2VA.png",
+    "sources": [
+      {
+        "path": "/home/ubuntu/llmspace/ComfyUI工作流/projects/ComfyUI-MiniMaxH3-Easy/workspace/workflows/unified-generation/workspace/specifications/tensorrt-vae-1344-4sec/workflow.api.json",
+        "sha256": "88299a8088547282e2a0237973a9ca8169c648e8f498181007757200809e00db"
+      }
+    ]
+  },
+  "h3-turbo-T2VA": {
+    "model": "h3-turbo",
+    "mode": "T2VA",
+    "directory": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-turbo",
+    "apiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-turbo/T2VA.api.json",
+    "uiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-turbo/h3-turbo-T2VA.json",
+    "image": "/workflow-previews/h3-turbo-T2VA.png",
+    "sources": [
+      {
+        "path": "/home/ubuntu/llmspace/avspace/codex/workflows/h3_router.py",
+        "sha256": "f36a2b352901334ef69e4ce18f60ed51e5c67d6e786ddd95b84a67c61996c020"
+      },
+      {
+        "path": "/home/ubuntu/llmspace/avspace/codex/workflows/native_768p_api.json",
+        "sha256": "a61d83675e9955d4e6e1e87dc0d691eff6a082e26543704e0d81bc234fbef2cc"
+      }
+    ]
+  },
+  "h3-turbo-I2VA": {
+    "model": "h3-turbo",
+    "mode": "I2VA",
+    "directory": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-turbo",
+    "apiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-turbo/I2VA.api.json",
+    "uiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-turbo/h3-turbo-I2VA.json",
+    "image": "/workflow-previews/h3-turbo-I2VA.png",
+    "sources": [
+      {
+        "path": "/home/ubuntu/llmspace/avspace/codex/workflows/h3_router.py",
+        "sha256": "f36a2b352901334ef69e4ce18f60ed51e5c67d6e786ddd95b84a67c61996c020"
+      },
+      {
+        "path": "/home/ubuntu/llmspace/avspace/codex/workflows/native_768p_api.json",
+        "sha256": "a61d83675e9955d4e6e1e87dc0d691eff6a082e26543704e0d81bc234fbef2cc"
+      }
+    ]
+  },
+  "h3-turbo-FL2VA": {
+    "model": "h3-turbo",
+    "mode": "FL2VA",
+    "directory": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-turbo",
+    "apiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-turbo/FL2VA.api.json",
+    "uiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-turbo/h3-turbo-FL2VA.json",
+    "image": "/workflow-previews/h3-turbo-FL2VA.png",
+    "sources": [
+      {
+        "path": "/home/ubuntu/llmspace/avspace/codex/workflows/h3_router.py",
+        "sha256": "f36a2b352901334ef69e4ce18f60ed51e5c67d6e786ddd95b84a67c61996c020"
+      },
+      {
+        "path": "/home/ubuntu/llmspace/avspace/codex/workflows/native_768p_api.json",
+        "sha256": "a61d83675e9955d4e6e1e87dc0d691eff6a082e26543704e0d81bc234fbef2cc"
+      }
+    ]
+  },
+  "h3-standard-T2VA": {
+    "model": "h3-standard",
+    "mode": "T2VA",
+    "directory": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-standard",
+    "apiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-standard/T2VA.api.json",
+    "uiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-standard/h3-standard-T2VA.json",
+    "image": "/workflow-previews/h3-standard-T2VA.png",
+    "sources": [
+      {
+        "path": "/home/ubuntu/llmspace/avspace/codex/workflows/h3_router.py",
+        "sha256": "f36a2b352901334ef69e4ce18f60ed51e5c67d6e786ddd95b84a67c61996c020"
+      },
+      {
+        "path": "/home/ubuntu/llmspace/avspace/codex/workflows/native_768p_api.json",
+        "sha256": "a61d83675e9955d4e6e1e87dc0d691eff6a082e26543704e0d81bc234fbef2cc"
+      }
+    ]
+  },
+  "h3-standard-I2VA": {
+    "model": "h3-standard",
+    "mode": "I2VA",
+    "directory": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-standard",
+    "apiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-standard/I2VA.api.json",
+    "uiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-standard/h3-standard-I2VA.json",
+    "image": "/workflow-previews/h3-standard-I2VA.png",
+    "sources": [
+      {
+        "path": "/home/ubuntu/llmspace/avspace/codex/workflows/h3_router.py",
+        "sha256": "f36a2b352901334ef69e4ce18f60ed51e5c67d6e786ddd95b84a67c61996c020"
+      },
+      {
+        "path": "/home/ubuntu/llmspace/avspace/codex/workflows/native_768p_api.json",
+        "sha256": "a61d83675e9955d4e6e1e87dc0d691eff6a082e26543704e0d81bc234fbef2cc"
+      }
+    ]
+  },
+  "h3-standard-FL2VA": {
+    "model": "h3-standard",
+    "mode": "FL2VA",
+    "directory": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-standard",
+    "apiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-standard/FL2VA.api.json",
+    "uiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-standard/h3-standard-FL2VA.json",
+    "image": "/workflow-previews/h3-standard-FL2VA.png",
+    "sources": [
+      {
+        "path": "/home/ubuntu/llmspace/avspace/codex/workflows/h3_router.py",
+        "sha256": "f36a2b352901334ef69e4ce18f60ed51e5c67d6e786ddd95b84a67c61996c020"
+      },
+      {
+        "path": "/home/ubuntu/llmspace/avspace/codex/workflows/native_768p_api.json",
+        "sha256": "a61d83675e9955d4e6e1e87dc0d691eff6a082e26543704e0d81bc234fbef2cc"
+      }
+    ]
+  },
+  "h3-reference-turbo-Ref2VA": {
+    "model": "h3-reference-turbo",
+    "mode": "Ref2VA",
+    "directory": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-reference-turbo",
+    "apiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-reference-turbo/Ref2VA.api.json",
+    "uiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-reference-turbo/h3-reference-turbo-Ref2VA.json",
+    "image": "/workflow-previews/h3-reference-turbo-Ref2VA.png",
+    "sources": [
+      {
+        "path": "/home/ubuntu/llmspace/avspace/codex/workflows/h3_router.py",
+        "sha256": "f36a2b352901334ef69e4ce18f60ed51e5c67d6e786ddd95b84a67c61996c020"
+      },
+      {
+        "path": "/home/ubuntu/llmspace/avspace/codex/workflows/native_768p_api.json",
+        "sha256": "a61d83675e9955d4e6e1e87dc0d691eff6a082e26543704e0d81bc234fbef2cc"
+      }
+    ]
+  },
+  "h3-reference-Ref2VA": {
+    "model": "h3-reference",
+    "mode": "Ref2VA",
+    "directory": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-reference",
+    "apiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-reference/Ref2VA.api.json",
+    "uiFile": "/home/ubuntu/llmspace/avspace/manual/comfyui/default/workflows/Toonflow/h3-reference/h3-reference-Ref2VA.json",
+    "image": "/workflow-previews/h3-reference-Ref2VA.png",
+    "sources": [
+      {
+        "path": "/home/ubuntu/llmspace/avspace/codex/workflows/h3_router.py",
+        "sha256": "f36a2b352901334ef69e4ce18f60ed51e5c67d6e786ddd95b84a67c61996c020"
+      },
+      {
+        "path": "/home/ubuntu/llmspace/avspace/codex/workflows/native_768p_api.json",
+        "sha256": "a61d83675e9955d4e6e1e87dc0d691eff6a082e26543704e0d81bc234fbef2cc"
+      }
+    ]
+  }
+}

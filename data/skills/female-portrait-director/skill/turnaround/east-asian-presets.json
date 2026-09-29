@@ -1,0 +1,110 @@
+{
+  "east-asian-young-woman": {
+    "label": "许澄·26岁长脸女修士",
+    "settings": {
+      "age": "26岁",
+      "gender": "女性",
+      "ethnicity": "虚构东亚角色",
+      "height": "174cm",
+      "head_body_ratio": "7.5头身",
+      "face_structure": "窄长脸，颧骨位置高但横向不宽，下颌收束而非尖锐，下巴长度中等",
+      "facial_features": "细长单眼皮、眼距适中、平直眉、鼻梁中高且窄、薄上唇与中等下唇",
+      "skin_tone": "中性米色，保留毛孔",
+      "body": "高挑纤长、窄肩，腿长但自然",
+      "hair": "黑色下颌长度直发波波头，侧分露额",
+      "costume": "月白丝缎交领长衣、青玉色高腰长裙、轻盈天青披帛，银线莲纹、白玉腰佩、浅青绣鞋",
+      "notes": "沉静专注，淡妆，不改变天然眼形，空手",
+      "template": "xianxia"
+    }
+  },
+  "east-asian-tall-man": {
+    "label": "沈砚·35岁瘦长脸男剑修",
+    "settings": {
+      "age": "35岁",
+      "gender": "男性",
+      "ethnicity": "虚构东亚角色",
+      "height": "186cm",
+      "head_body_ratio": "7.8头身",
+      "face_structure": "瘦长矩形脸，颧部骨点清楚，面颊薄，下颌角窄而转折明确",
+      "facial_features": "淡长眉、较大双眼皮眼睛、眼窝轻微凹陷、鼻背细长微凸、薄唇清晰唇峰",
+      "skin_tone": "自然浅橄榄色",
+      "body": "高瘦，颈部修长、窄胸廓、肩斜度明显",
+      "hair": "黑色长发低束，鬓侧一缕灰发，干净剃须",
+      "costume": "天青色丝绸交领长袍、月白叠襟、白玉腰封、银色细云纹、月白长靴，袖型收束、衣摆修长",
+      "notes": "古典虚构人物，克制柔和，空手",
+      "template": "xianxia"
+    }
+  },
+  "east-asian-older-woman": {
+    "label": "陈素·72岁宽椭圆脸高挑女药师",
+    "settings": {
+      "age": "72岁",
+      "gender": "女性",
+      "ethnicity": "虚构东亚角色",
+      "height": "172cm",
+      "head_body_ratio": "7.4头身",
+      "face_structure": "宽椭圆脸，眉骨平缓、颧部圆缓，下颌软组织自然松弛，短圆下巴",
+      "facial_features": "稀疏弧形眉、内双眼睛与松弛上眼睑、眼距略宽、中低鼻梁圆鼻尖、下唇略厚",
+      "skin_tone": "暖米棕色，保留斑点、皱纹与自然色差",
+      "body": "高挑匀称，腰腹自然，保留适龄轻微含肩和皮肤纹理，不矮胖、不圆厚",
+      "hair": "银灰直发梳成低圆髻，额前碎发",
+      "costume": "浅紫锦缎交领长衣、月白长裙、银线兰纹和青玉腰佩，衣摆挺而垂顺，珍珠白绣鞋",
+      "notes": "平静坚定，素颜，不年轻化，不戴眼镜，不持道具",
+      "template": "xianxia"
+    }
+  },
+  "east-asian-nonbinary": {
+    "label": "陆青·30岁菱形脸非二元阵法师",
+    "settings": {
+      "age": "30岁",
+      "gender": "非二元，中性表达",
+      "ethnicity": "虚构东亚角色",
+      "height": "185cm",
+      "head_body_ratio": "7.6头身",
+      "face_structure": "菱形脸，颧部横向明显、额头与下颌略窄，下巴圆钝",
+      "facial_features": "短直眉、窄双眼皮、上扬幅度很小的眼尾、中等鼻梁与宽圆鼻头、饱满清晰双唇",
+      "skin_tone": "中等暖褐色",
+      "body": "中等骨架、直线腰胯、结实匀称的肩臂",
+      "hair": "深黑偏粗短卷发，蓬松高顶与贴短两侧",
+      "costume": "孔雀蓝丝缎宽袖外袍、象牙白内衫、金线几何云纹、琥珀腰饰、米金长靴，层叠衣襟与直线腰封",
+      "notes": "自然中性气质，不用性别刻板妆容，空手",
+      "template": "xianxia"
+    }
+  },
+  "east-asian-craftsman": {
+    "label": "周岩·43岁宽方脸高个炼器师",
+    "settings": {
+      "age": "43岁",
+      "gender": "男性",
+      "ethnicity": "虚构东亚角色",
+      "height": "188cm",
+      "head_body_ratio": "7.8头身",
+      "face_structure": "宽方脸，颧弓外扩，下颌角明显，下巴宽平",
+      "facial_features": "浓平眉、窄内双、眼距稍近、宽鼻翼钝鼻头、上下唇厚度中等",
+      "skin_tone": "日晒暖棕色，手背略深",
+      "body": "高大匀称，肩宽适中、颈肩舒展、腰腹自然收束，四肢修长，力量感克制，不矮胖、不粗短",
+      "hair": "黑色寸头，两鬓少量灰发，短胡茬",
+      "costume": "朱红织锦交领战袍、象牙白内层、鎏金云纹腰封与小型玉扣、金色结构护肩、绛红长靴，修长利落轮廓",
+      "notes": "稳重、略严肃，保留面部不对称，空手，不持武器或工具",
+      "template": "xianxia"
+    }
+  },
+  "east-asian-youth": {
+    "label": "小禾·16岁圆脸男弟子",
+    "settings": {
+      "age": "16岁",
+      "gender": "男孩",
+      "ethnicity": "虚构东亚角色",
+      "height": "185cm",
+      "head_body_ratio": "7.4头身",
+      "face_structure": "短圆脸，平缓眉骨，饱满面颊，小而圆的下巴",
+      "facial_features": "圆杏眼、自然内双、眼距略宽、低鼻梁圆鼻头、柔和唇峰",
+      "skin_tone": "自然暖米色",
+      "body": "高挑匀称的少年体型，肩部尚未形成成年宽厚感，颈肩舒展、四肢自然修长",
+      "hair": "黑色齐耳短发，参差短刘海",
+      "costume": "天青色丝质交领短袍、月白长裤、青色软靴，袖缘小面积银线云纹，适龄完整覆盖，不加成人盔甲",
+      "notes": "适龄完整覆盖的修仙弟子服，保留少年面容，不用成人性感造型，空手",
+      "template": "xianxia"
+    }
+  }
+}

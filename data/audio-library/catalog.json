@@ -1,0 +1,2678 @@
+{
+  "version": 1,
+  "sounds": [
+    {
+      "id": "male-clear",
+      "name": "清朗男声",
+      "gender": "男",
+      "age": "青年",
+      "traits": [
+        "清朗",
+        "自信"
+      ],
+      "description": "二十五岁，明亮干净的中高音，友善自信，吐字利落。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/male-clear.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 6.0,
+      "bytes": 288044,
+      "sha256": "7166f39138d66f9de3a6a4c5c7044c6a07792ca096ee90865845fd01e7ddb371",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "male-warm",
+      "name": "温润男声",
+      "gender": "男",
+      "age": "青年",
+      "traits": [
+        "温润",
+        "体贴"
+      ],
+      "description": "三十岁，温暖柔软的中音，体贴可靠，气息平稳。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/male-warm.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 7.44,
+      "bytes": 357164,
+      "sha256": "0a4f78006329291425422b42dd74f018d085e44c4d899fe7b9ee7f1c5697ded8",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "male-deep",
+      "name": "低沉男声",
+      "gender": "男",
+      "age": "中年",
+      "traits": [
+        "沉稳",
+        "克制"
+      ],
+      "description": "四十岁，厚实低沉的低音，少言内敛，沉稳坚定。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/male-deep.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 8.0,
+      "bytes": 384044,
+      "sha256": "9e26db1ff377a436f88e8696b67e6319af5f746f864a08b88e97dd8e5deee0f0",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "male-rough",
+      "name": "沙哑男声",
+      "gender": "男",
+      "age": "中年",
+      "traits": [
+        "粗犷",
+        "豪爽"
+      ],
+      "description": "四十五岁，沙哑粗粝有颗粒感的中低音，豪爽直率，咬字有力。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/male-rough.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 8.64,
+      "bytes": 414764,
+      "sha256": "51f954949ae022ab569130c56fa26b45293ad0f4f96e104fe319a198f84ba771",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "male-mature",
+      "name": "苍劲男声",
+      "gender": "男",
+      "age": "老年",
+      "traits": [
+        "苍劲",
+        "坚毅"
+      ],
+      "description": "七十岁，苍老浑厚的低音，气息略粗，坚毅有阅历，缓慢但有力量。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/male-mature.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 9.12,
+      "bytes": 437804,
+      "sha256": "5efd84986e7178bb62951cced806f3edf829d46d56c9f82c60ef23c369795321",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "male-child",
+      "name": "清脆男童",
+      "gender": "男",
+      "age": "儿童",
+      "traits": [
+        "天真",
+        "好奇"
+      ],
+      "description": "十岁男孩，真实儿童明亮清脆的高音，天真好奇，充满活力，避免成人腔。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/male-child.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 6.88,
+      "bytes": 330284,
+      "sha256": "0b7c0135c655e94b2b66b953039fc0ddbd26bbe7f88b462928bc63071d603de9",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "male-teen",
+      "name": "少年朝气",
+      "gender": "男",
+      "age": "少年",
+      "traits": [
+        "爽朗",
+        "热情"
+      ],
+      "description": "十六岁少年，变声期后轻薄有弹性的中高音，阳光爽朗，热情勇敢。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/male-teen.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 6.48,
+      "bytes": 311084,
+      "sha256": "3ebe586177c3b34a08ff67553443c704e7d7d58780eb69fa20a42c1ae6a8b469",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "male-cool",
+      "name": "清冷少年",
+      "gender": "男",
+      "age": "少年",
+      "traits": [
+        "清冷",
+        "内向"
+      ],
+      "description": "十七岁少年，清亮偏薄的中高音，清冷内向，轻声但不耳语，情绪收敛。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/male-cool.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 7.76,
+      "bytes": 372524,
+      "sha256": "17ea6c76702208d4dad0947e07af0f6ab6f794593eea23abe4259ed7fe471602",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "male-playful",
+      "name": "机灵青年",
+      "gender": "男",
+      "age": "青年",
+      "traits": [
+        "机灵",
+        "幽默"
+      ],
+      "description": "二十三岁，轻快灵动的中音，俏皮机灵，有笑意和幽默感，节奏鲜明。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/male-playful.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 7.6,
+      "bytes": 364844,
+      "sha256": "16f99f35723ed4610edf45d89d47c8df913fc4840632b7d4041f7a0d44fd6bdf",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "male-scholar",
+      "name": "儒雅书生",
+      "gender": "男",
+      "age": "青年",
+      "traits": [
+        "儒雅",
+        "谦和"
+      ],
+      "description": "二十八岁，清润书卷气的中音，谦和有礼，温文从容，咬字清晰。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/male-scholar.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 7.36,
+      "bytes": 353324,
+      "sha256": "fdc180a0a383dfd73f7f2a850a43ac08d6054d45e8e65cc72e08cda412c4e778",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "male-heroic",
+      "name": "英气青年",
+      "gender": "男",
+      "age": "青年",
+      "traits": [
+        "勇敢",
+        "果断"
+      ],
+      "description": "三十二岁，坚实明亮的男中音，英气果断，干脆有力但不喊叫。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/male-heroic.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 6.64,
+      "bytes": 318764,
+      "sha256": "c491d8e1afde12a545289f7f5c94d47effda4b913baaf615fbd56c0f404f0740",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "male-authority",
+      "name": "威严中年",
+      "gender": "男",
+      "age": "中年",
+      "traits": [
+        "威严",
+        "严谨"
+      ],
+      "description": "五十岁，低沉饱满的男低音，威严严谨，讲话短促明确，有领导气场。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/male-authority.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 8.08,
+      "bytes": 387884,
+      "sha256": "3282ab13bc7583bd71ee96ada7581756fa4034e48fe83ff4288a19964bc0bc00",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "male-cunning",
+      "name": "阴柔谋士",
+      "gender": "男",
+      "age": "中年",
+      "traits": [
+        "精明",
+        "深沉"
+      ],
+      "description": "四十二岁，窄而偏鼻腔共鸣的男中音，精明细腻，慢条斯理，含蓄深沉。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/male-cunning.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 7.76,
+      "bytes": 372524,
+      "sha256": "00debacd49c4f400ce6d111da489b8c31faaf0ce4d72a041842b05d1fff645f9",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "male-elder-kind",
+      "name": "慈祥爷爷",
+      "gender": "男",
+      "age": "老年",
+      "traits": [
+        "慈祥",
+        "宽厚"
+      ],
+      "description": "七十五岁，年迈稍沙的中低音，慈祥宽厚，柔和亲切，语速稍慢。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/male-elder-kind.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 10.24,
+      "bytes": 491564,
+      "sha256": "30607493f3320934934b06475fb4f49d19be95fdb6d0dd2aa82116c89476e79f",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "male-storyteller",
+      "name": "风趣长者",
+      "gender": "男",
+      "age": "老年",
+      "traits": [
+        "风趣",
+        "豁达"
+      ],
+      "description": "六十五岁，苍老但有活力的中音，风趣豁达，抑扬顿挫，生活气息自然。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/male-storyteller.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 9.2,
+      "bytes": 441644,
+      "sha256": "acc00add6a9172373fee552bf9edea1c19a7d0c6504de4ddaa7334dd76afcc97",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "female-gentle",
+      "name": "温柔女声",
+      "gender": "女",
+      "age": "青年",
+      "traits": [
+        "温柔",
+        "细腻"
+      ],
+      "description": "二十八岁，温柔细腻的女中音，气息轻柔，体贴亲近，语速舒缓。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/female-gentle.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 7.6,
+      "bytes": 364844,
+      "sha256": "dd192d14052bf06fdd09b450276b5debc36b99332d2218bd4d72082d6f0f5348",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "female-bright",
+      "name": "清亮女声",
+      "gender": "女",
+      "age": "青年",
+      "traits": [
+        "明快",
+        "开朗"
+      ],
+      "description": "二十三岁，明亮通透的女高音，开朗热情，吐字清晰，节奏轻快。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/female-bright.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 6.88,
+      "bytes": 330284,
+      "sha256": "47508faaa92d2ca3ec34914bb06994062fc477b3bc58e16980b655c3ce68fc15",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "female-cool",
+      "name": "清冷女声",
+      "gender": "女",
+      "age": "青年",
+      "traits": [
+        "清冷",
+        "独立"
+      ],
+      "description": "二十九岁，清冷干净的女中音，气声少，独立克制，收尾利落。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/female-cool.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 7.92,
+      "bytes": 380204,
+      "sha256": "a09682a33b13828234db181948036a54007fafba1695f4bcf0d81d6a91a2d6e4",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "female-rich",
+      "name": "醇厚女声",
+      "gender": "女",
+      "age": "中年",
+      "traits": [
+        "稳重",
+        "大方"
+      ],
+      "description": "四十岁，醇厚饱满的女中低音，稳重大方，共鸣自然，节奏沉着。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/female-rich.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 8.24,
+      "bytes": 395564,
+      "sha256": "e7525b96fca2c79d2b1c72854161b1593a92f08b9232529a8ee802019d3af65e",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "female-mature",
+      "name": "慈和女声",
+      "gender": "女",
+      "age": "老年",
+      "traits": [
+        "慈和",
+        "包容"
+      ],
+      "description": "六十八岁，柔和略苍老的女中低音，慈和包容，停顿耐心，咬字清楚。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/female-mature.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 10.16,
+      "bytes": 487724,
+      "sha256": "705e7d259e51e04c2cc034a4f61456448ffa262a49e586509e084f233ac6fa67",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "female-child",
+      "name": "甜亮女童",
+      "gender": "女",
+      "age": "儿童",
+      "traits": [
+        "天真",
+        "活泼"
+      ],
+      "description": "九岁女孩，真实儿童甜亮的高音，天真活泼，好奇兴奋，避免成人腔。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/female-child.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 7.6,
+      "bytes": 364844,
+      "sha256": "935b9ac86ada0ef2ca6377d7aeaf2bc8bb299d078325d791d0ecf00fe8582c34",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "female-teen",
+      "name": "元气少女",
+      "gender": "女",
+      "age": "少年",
+      "traits": [
+        "活泼",
+        "热情"
+      ],
+      "description": "十六岁少女，年轻明快的高音，元气充沛，热情活泼，声音有弹性。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/female-teen.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 8.56,
+      "bytes": 410924,
+      "sha256": "d469b8b7c625be00cc77c5a1eeab344a8e748be1d57ee678066be0836da839e4",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "female-shy",
+      "name": "腼腆少女",
+      "gender": "女",
+      "age": "少年",
+      "traits": [
+        "腼腆",
+        "敏感"
+      ],
+      "description": "十七岁少女，轻柔清细的高音，腼腆敏感，稍有迟疑但字句完整，不耳语。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/female-shy.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 8.0,
+      "bytes": 384044,
+      "sha256": "4a6527d486f5066b8fc32ff0b487815758dde1ee454baab3e825ee3c1ef31bce",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "female-playful",
+      "name": "俏皮青年",
+      "gender": "女",
+      "age": "青年",
+      "traits": [
+        "俏皮",
+        "机敏"
+      ],
+      "description": "二十二岁，灵动俏皮的中高音，机敏有趣，带一点笑意，起伏自然。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/female-playful.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 6.96,
+      "bytes": 334124,
+      "sha256": "d7ba1c07ec966b2d3e972945b836865d530d14c9d48aa93c8d9d9b4bc94c4a73",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "female-elegant",
+      "name": "知性文雅",
+      "gender": "女",
+      "age": "青年",
+      "traits": [
+        "知性",
+        "优雅"
+      ],
+      "description": "三十三岁，平滑清润的女中音，知性优雅，谈吐从容，条理清楚。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/female-elegant.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 8.08,
+      "bytes": 387884,
+      "sha256": "e8dbd003e5d492c03f9223b544680a81afecceaf05d9859c96ada05a9063f73b",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "female-heroic",
+      "name": "飒爽女侠",
+      "gender": "女",
+      "age": "青年",
+      "traits": [
+        "飒爽",
+        "果断"
+      ],
+      "description": "三十岁，结实清亮的中音，勇敢爽利，果断直接，干脆有力量。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/female-heroic.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 6.24,
+      "bytes": 299564,
+      "sha256": "d0ee8387370e3fba08d2ae9222488dec54b05ec2a7c4ef11ba9c76491254e83c",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "female-authority",
+      "name": "干练中年",
+      "gender": "女",
+      "age": "中年",
+      "traits": [
+        "干练",
+        "坚定"
+      ],
+      "description": "四十六岁，坚定有穿透力的女中低音，干练严谨，节奏明确，沉着自信。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/female-authority.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 7.84,
+      "bytes": 376364,
+      "sha256": "404f9e481e19f67710525b48f3d93b80b6e70d27ce8198928de8a28b14eda019",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "female-raspy",
+      "name": "烟嗓女声",
+      "gender": "女",
+      "age": "中年",
+      "traits": [
+        "慵懒",
+        "洒脱"
+      ],
+      "description": "四十二岁，略沙哑的低音烟嗓，有明显颗粒感，慵懒洒脱，语气放松。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/female-raspy.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 8.56,
+      "bytes": 410924,
+      "sha256": "a8a9e45783fb42d949150873e80204cf4af77a2de1230901d8f8b92ce61e4f27",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "female-elder-story",
+      "name": "沧桑长者",
+      "gender": "女",
+      "age": "老年",
+      "traits": [
+        "沧桑",
+        "睿智"
+      ],
+      "description": "七十五岁，苍老干涩的中低音，富有阅历，睿智从容，语速慢，有自然呼吸。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/female-elder-story.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 7.68,
+      "bytes": 368684,
+      "sha256": "3476673bdf796051a2a6d2a01ce09f1d5ffdcf36129471030412fcdba600d9d3",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "female-elder-lively",
+      "name": "爽朗奶奶",
+      "gender": "女",
+      "age": "老年",
+      "traits": [
+        "爽朗",
+        "乐观"
+      ],
+      "description": "六十五岁，稍苍老的明亮中音，爽朗乐观，精神充足，语气亲切，笑意自然。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/female-elder-lively.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 7.52,
+      "bytes": 361004,
+      "sha256": "a8fcd3a81b7d1d2768fd39696124c52138609a84b9de24b2957b1e807b39671a",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "neutral-clear",
+      "name": "中性清晰声",
+      "gender": "中性",
+      "age": "青年",
+      "traits": [
+        "中性",
+        "平和"
+      ],
+      "description": "二十六岁，性别感较弱的干净中音，平和平衡，语速适中，吐字清晰。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/neutral-clear.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 8.16,
+      "bytes": 391724,
+      "sha256": "327b228cc271b543cd36bdc93f453bc86b7b092b3d25402aa52a3914e4380e0d",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "female-child-soft",
+      "name": "软糯女童",
+      "gender": "女",
+      "age": "儿童",
+      "traits": [
+        "软糯",
+        "乖巧"
+      ],
+      "description": "七岁女孩，细软圆润的童声高音，声音轻巧，乖巧亲近，语句短而自然，吐字清楚。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/female-child-soft.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 7.52,
+      "bytes": 361004,
+      "sha256": "1b6e12ce353f843e5914585c101663658572b3619118a9110a042bfe7e16e69e",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "female-child-spunky",
+      "name": "伶俐女童",
+      "gender": "女",
+      "age": "儿童",
+      "traits": [
+        "伶俐",
+        "大胆"
+      ],
+      "description": "十二岁女孩，清脆偏亮的童声，语速轻快，伶俐大胆，尾音短促有精神，不用成人腔。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/female-child-spunky.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 6.8,
+      "bytes": 326444,
+      "sha256": "fdc6e531005477ee8cdc01aa4282d9083bbfb2933a10fa200afa4c06d31aa6ec",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "female-teen-rebel",
+      "name": "倔强少女",
+      "gender": "女",
+      "age": "少年",
+      "traits": [
+        "倔强",
+        "直率"
+      ],
+      "description": "十七岁少女，偏紧实的中高音，略带鼻腔共鸣，倔强直率，重音明确，语气有棱角但不喊叫。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/female-teen-rebel.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 7.04,
+      "bytes": 337964,
+      "sha256": "ee526e09f9b49dc6cf808c35e22db0416e0f30a61de02593d0f1fba1dadbe954",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "female-teen-dreamy",
+      "name": "空灵少女",
+      "gender": "女",
+      "age": "少年",
+      "traits": [
+        "空灵",
+        "文静"
+      ],
+      "description": "十七岁少女，轻薄透明的高音，气息细而平稳，文静含蓄，语速舒缓，尾音轻柔但不耳语。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/female-teen-dreamy.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 8.24,
+      "bytes": 395564,
+      "sha256": "51e3ad179834085b05a2cfe371e49ef816861abf2d4087aaef42e2f950093ca0",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "female-sweet-neighbor",
+      "name": "甜美邻家",
+      "gender": "女",
+      "age": "青年",
+      "traits": [
+        "甜美",
+        "亲和"
+      ],
+      "description": "二十一岁，甜润明亮的女中高音，鼻腔共鸣轻微，亲和自然，语气带笑，节奏轻松。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/female-sweet-neighbor.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 8.24,
+      "bytes": 395564,
+      "sha256": "de4714f347f9d9601e291ba97f78e8c653e744124ea0ed63e15a62cb93acb8f1",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "female-classical-lady",
+      "name": "清雅闺秀",
+      "gender": "女",
+      "age": "青年",
+      "traits": [
+        "清雅",
+        "含蓄"
+      ],
+      "description": "二十五岁，细腻清润的女中音，清雅含蓄，句间停顿有分寸，收尾柔和，古典气质，正常说话不唱戏。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/female-classical-lady.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 8.0,
+      "bytes": 384044,
+      "sha256": "0b4ce76950ae94eb6f58f1be60ed96e3dd55075a01f9115bd41ad293abbdbb71",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "female-low-magnetic",
+      "name": "磁性低音",
+      "gender": "女",
+      "age": "青年",
+      "traits": [
+        "磁性",
+        "从容"
+      ],
+      "description": "三十二岁，胸腔共鸣明显的女低音，音色厚实圆润，磁性沉着，语速稍慢，低音清晰不闷。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/female-low-magnetic.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 7.92,
+      "bytes": 380204,
+      "sha256": "f8a4bed8bc2440fc233c34e4bcc5be77e6c6d3f0c4009e4d986527bc539fc3f9",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "female-icy-command",
+      "name": "冷峻御姐",
+      "gender": "女",
+      "age": "青年",
+      "traits": [
+        "冷峻",
+        "自持"
+      ],
+      "description": "三十四岁，带金属质感的女中低音，气声少，冷峻自持，重音精准，句尾干净，节奏不急。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/female-icy-command.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 8.16,
+      "bytes": 391724,
+      "sha256": "e547d840d7dded1d0fa844a64bfb2efa1e81e680c152f9c0561003f8d900b647",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "female-quick-witted",
+      "name": "伶牙俐齿",
+      "gender": "女",
+      "age": "青年",
+      "traits": [
+        "机智",
+        "爽快"
+      ],
+      "description": "二十六岁，结实清亮的女中高音，机智爽快，语速较快但每个字清楚，重音灵活，句尾果断。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/female-quick-witted.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 6.4,
+      "bytes": 307244,
+      "sha256": "d82a815aa2db129bca7cfac911556fd971023baa5e2d666521ebfbd2b08e5658",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "female-mysterious",
+      "name": "神秘女声",
+      "gender": "女",
+      "age": "青年",
+      "traits": [
+        "神秘",
+        "深沉"
+      ],
+      "description": "三十五岁，暗色柔滑的女中低音，轻微气声，神秘深沉，语速缓慢，停顿克制，正常说话不耳语。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/female-mysterious.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 8.4,
+      "bytes": 403244,
+      "sha256": "d0ba7cf925c1010d679042c30d7fe0b1daeeb6e2e060d510c07c1bc057f9e4f9",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "female-maternal",
+      "name": "温厚母亲",
+      "gender": "女",
+      "age": "中年",
+      "traits": [
+        "温厚",
+        "关怀"
+      ],
+      "description": "四十五岁，宽厚温暖的女中低音，富有胸腔共鸣，温厚耐心，关怀亲切，语速适中，呼吸自然。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/female-maternal.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 7.36,
+      "bytes": 353324,
+      "sha256": "e03c970b03627bffca3d713911d16c93e615cbc90b9eac6e4d0a1816e9e9e5db",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "female-rustic",
+      "name": "质朴大姐",
+      "gender": "女",
+      "age": "中年",
+      "traits": [
+        "质朴",
+        "热心"
+      ],
+      "description": "四十八岁，宽亮略粗粝的女中音，质朴热心，语气直接，生活感强，音量自然，标准普通话。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/female-rustic.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 6.4,
+      "bytes": 307244,
+      "sha256": "2494ce0376a513b598f6a2ff989bdd71cf526b07f238dc984b272734c58699b1",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "female-regal",
+      "name": "端庄贵妇",
+      "gender": "女",
+      "age": "中年",
+      "traits": [
+        "端庄",
+        "矜持"
+      ],
+      "description": "五十五岁，圆润下沉的女中低音，端庄矜持，吐字讲究，语速不疾不徐，有威仪但不生硬。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/female-regal.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 7.68,
+      "bytes": 368684,
+      "sha256": "d730390fd892cd7f80e05eeced4280c73b949970e8dc38cd1df714835223f753",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "female-elder-stern",
+      "name": "严厉长辈",
+      "gender": "女",
+      "age": "老年",
+      "traits": [
+        "严厉",
+        "认真"
+      ],
+      "description": "七十二岁，苍老偏干的女中音，少量沙哑，严厉认真，咬字有力，节奏明确，保持老年声音特征。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/female-elder-stern.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 9.92,
+      "bytes": 476204,
+      "sha256": "464aff913e3cc087a8fdd241ff65154d3e7b6b860e4f390978b95b1019a820e6",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "female-elder-soft",
+      "name": "轻缓老妪",
+      "gender": "女",
+      "age": "老年",
+      "traits": [
+        "轻缓",
+        "安详"
+      ],
+      "description": "八十三岁，年迈细弱略带颤动的女中高音，气息短而柔，安详缓慢，轻微沙哑，字句仍然清楚。",
+      "category": "voice",
+      "categoryName": "人物声线",
+      "language": "中文",
+      "filePath": "/library/audio/voices/female-elder-soft.wav",
+      "author": "Toonflow 本地虚构音色",
+      "license": "本地生成 · 模型 Apache-2.0",
+      "sourceUrl": "https://huggingface.co/Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+      "provenance": "本机生成的虚构中文音色；年龄与性格为设计标签",
+      "duration": 7.84,
+      "bytes": 376364,
+      "sha256": "24290d585c14d77a3e6a5edb4204f90155f29a1582bf155fec9ce0d5057c63f3",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "classic-wukong-liyang-1988",
+      "name": "孙悟空经典配音·李扬（1988春晚节目）",
+      "category": "dubbing",
+      "categoryName": "经典配音",
+      "description": "央视1988年春晚《孙悟空与唐老鸭》节目原音，李扬现场配音；包含主持、孙悟空与唐老鸭等声音及现场背景，不是86版电视剧分离干声。",
+      "traits": [
+        "孙悟空",
+        "李扬",
+        "经典",
+        "西游记",
+        "现场配音",
+        "原声"
+      ],
+      "author": "李扬；央视节目",
+      "license": "版权保留 · 未附再利用授权",
+      "sourceUrl": "https://tv.cctv.com/2009/11/11/VIDE1355603056491320.shtml",
+      "provenance": "从央视官方公开、未加密音频流保存完整节目音轨，转为48kHz双声道WAV；试听为前30秒。非AI仿声，非授权素材包。",
+      "collection": "classic",
+      "materialType": "节目配音",
+      "usageNotice": "经典节目参考素材。来源页未提供开放再利用许可；公开发布、改编或商用前需向相关权利方确认授权。",
+      "recordingType": "影视节目原音",
+      "filePath": "/library/audio/effects/classic-wukong-liyang-1988.wav",
+      "previewSrc": "/oss/library/audio/previews/classic-wukong-liyang-1988.mp3",
+      "originalSrc": "/oss/library/audio/originals/expansion/classic-wukong-liyang-1988.m4a",
+      "duration": 284.544,
+      "bytes": 54632526,
+      "sha256": "6f704b3a9045dcf43b50ba5040ab9c6421088220f64b4e42cfabde78140e5397",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    },
+    {
+      "id": "amb-city",
+      "name": "城市车流",
+      "category": "environment",
+      "categoryName": "环境声",
+      "description": "道路车辆驶过的城市环境声。",
+      "filePath": "/library/audio/effects/amb-city.wav",
+      "author": "IgnasD",
+      "license": "CC0-1.0",
+      "sourceUrl": "https://opengameart.org/content/high-traffic-road-sounds",
+      "provenance": "下载素材，转为单声道 24kHz WAV；超过30秒保留前30秒，原始文件另存。",
+      "sourceFile": "originals/traffic.ogg",
+      "duration": 30.0,
+      "bytes": 1440078,
+      "sha256": "a1ff4a856a1472137df7e074775ee0d209462ffbe2a4d0bca0f8ccb212b36ee7",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "amb-fire",
+      "name": "炉火噼啪",
+      "category": "environment",
+      "categoryName": "环境声",
+      "description": "炉火燃烧与木柴噼啪声。",
+      "filePath": "/library/audio/effects/amb-fire.wav",
+      "author": "AntumDeluge",
+      "license": "CC0-1.0",
+      "sourceUrl": "https://opengameart.org/content/fire-crackling",
+      "provenance": "下载素材，转为单声道 24kHz WAV；超过30秒保留前30秒，原始文件另存。",
+      "sourceFile": "originals/fire.wav",
+      "duration": 2.871,
+      "bytes": 137868,
+      "sha256": "42a88999739feb5d37fbdcf5b0ba40fb5090a1bf7aa3fb5db2687c38502f5bca",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "nature-rain",
+      "name": "夜间雨声",
+      "category": "nature",
+      "categoryName": "自然声",
+      "description": "夜间持续落雨的自然声。",
+      "filePath": "/library/audio/effects/nature-rain.wav",
+      "author": "Antoine Goumain (Antoinemax)",
+      "license": "CC-BY-4.0",
+      "sourceUrl": "https://opengameart.org/content/nature-sounds-pack",
+      "provenance": "下载素材，转为单声道 24kHz WAV；超过30秒保留前30秒，原始文件另存。",
+      "sourceFile": "originals/extracted/Nature Sounds Pack/Ambient/AmbientNatureNightRainy.wav",
+      "duration": 14.0,
+      "bytes": 672098,
+      "sha256": "db91c5acf1cade380b3752ae0d0f5aefd89c9420add45462686d9ea1257df96d",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "nature-storm",
+      "name": "暴雨雷鸣",
+      "category": "nature",
+      "categoryName": "自然声",
+      "description": "风暴中的雨声与雷鸣。",
+      "filePath": "/library/audio/effects/nature-storm.wav",
+      "author": "Antoine Goumain (Antoinemax)",
+      "license": "CC-BY-4.0",
+      "sourceUrl": "https://opengameart.org/content/nature-sounds-pack",
+      "provenance": "下载素材，转为单声道 24kHz WAV；超过30秒保留前30秒，原始文件另存。",
+      "sourceFile": "originals/extracted/Nature Sounds Pack/Ambient/AmbientNatureStormRainThunder.wav",
+      "duration": 6.5,
+      "bytes": 312098,
+      "sha256": "9032010e75429c93690b63b410d0ee8662ee0cb46f3706f15cb94d9a5b0a0ca7",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "nature-outdoor",
+      "name": "户外自然氛围",
+      "category": "nature",
+      "categoryName": "自然声",
+      "description": "户外自然环境氛围。",
+      "filePath": "/library/audio/effects/nature-outdoor.wav",
+      "author": "Antoine Goumain (Antoinemax)",
+      "license": "CC-BY-4.0",
+      "sourceUrl": "https://opengameart.org/content/nature-sounds-pack",
+      "provenance": "下载素材，转为单声道 24kHz WAV；超过30秒保留前30秒，原始文件另存。",
+      "sourceFile": "originals/extracted/Nature Sounds Pack/Ambient/AmbientNatureOutside.wav",
+      "duration": 10.0,
+      "bytes": 480098,
+      "sha256": "c82ebd97be07fc101ed9ba34f4e04f32a552df7cf35122c6b2562e51155ecb65",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "nature-stream",
+      "name": "清浅溪流",
+      "category": "nature",
+      "categoryName": "自然声",
+      "description": "溪水连续流淌，适合林间水边场景。",
+      "filePath": "/library/audio/effects/nature-stream.wav",
+      "author": "Antoine Goumain (Antoinemax)",
+      "license": "CC-BY-4.0",
+      "sourceUrl": "https://opengameart.org/content/nature-sounds-pack",
+      "provenance": "下载素材，转为单声道 24kHz WAV；超过30秒保留前30秒，原始文件另存。",
+      "sourceFile": "originals/extracted/Nature Sounds Pack/Stream/Stream01.wav",
+      "duration": 1.5,
+      "bytes": 72098,
+      "sha256": "c8f687015683e866eb0ba67cf934c8ba7addfd0ba2be86fa185afa16097b3770",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "nature-stream-birds",
+      "name": "溪流与鸟鸣",
+      "category": "nature",
+      "categoryName": "自然声",
+      "description": "流水与林间鸟鸣相伴。",
+      "filePath": "/library/audio/effects/nature-stream-birds.wav",
+      "author": "Antoine Goumain (Antoinemax)",
+      "license": "CC-BY-4.0",
+      "sourceUrl": "https://opengameart.org/content/nature-sounds-pack",
+      "provenance": "下载素材，转为单声道 24kHz WAV；超过30秒保留前30秒，原始文件另存。",
+      "sourceFile": "originals/extracted/Nature Sounds Pack/Stream/StreamAndBirds02.wav",
+      "duration": 6.0,
+      "bytes": 288098,
+      "sha256": "ace8335b7e1d30ac9f685ed1e9f236a3b75f531085999bc3522313b592dcd8dd",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "nature-leaves",
+      "name": "树叶沙沙",
+      "category": "nature",
+      "categoryName": "自然声",
+      "description": "树叶移动的沙沙声，可用于风吹枝叶的细节。",
+      "filePath": "/library/audio/effects/nature-leaves.wav",
+      "author": "Brandon Morris (Augmentality / HaelDB)",
+      "license": "CC0-1.0",
+      "sourceUrl": "https://opengameart.org/content/random-sounds-samples",
+      "provenance": "下载素材，转为单声道 24kHz WAV；超过30秒保留前30秒，原始文件另存。",
+      "sourceFile": "originals/leaves.ogg",
+      "duration": 1.402,
+      "bytes": 67390,
+      "sha256": "32ead7eb22d0fd46f608e61058f617b186df9f6c905680dae23a96a2e39d1cc5",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "nature-wind-long",
+      "name": "旷野风声·持续风势",
+      "category": "nature",
+      "categoryName": "自然声",
+      "description": "起伏的持续风声，适合旷野、山谷、荒漠场景。作者以 PureData 合成。",
+      "traits": [
+        "风",
+        "旷野",
+        "氛围",
+        "合成"
+      ],
+      "author": "Luke.RUSTLTD",
+      "license": "CC0-1.0",
+      "sourceUrl": "https://opengameart.org/content/wind1",
+      "provenance": "保留源文件，转换为48kHz双声道WAV，不提升原始音质；试听最长30秒，下载为完整音频。",
+      "loopable": true,
+      "recordingType": "合成音效",
+      "filePath": "/library/audio/effects/nature-wind-long.wav",
+      "previewSrc": "/oss/library/audio/previews/nature-wind-long.mp3",
+      "originalSrc": "/oss/library/audio/originals/expansion/nature-wind-long.wav",
+      "duration": 59.999,
+      "bytes": 11519870,
+      "sha256": "95ac05e4c7697fd04dfc8f93804c3b58ba7b7f26ddb4083cea4c8d28837e93c1",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    },
+    {
+      "id": "nature-wind-gust",
+      "name": "疾风掠过·短阵风",
+      "category": "nature",
+      "categoryName": "自然声",
+      "description": "一阵短促风声，用于风起、转场或快速掠过。",
+      "traits": [
+        "风",
+        "阵风",
+        "转场"
+      ],
+      "author": "remaxim",
+      "license": "CC0-1.0",
+      "sourceUrl": "https://opengameart.org/content/short-wind-sound",
+      "provenance": "保留源文件，转换为48kHz双声道WAV，不提升原始音质；试听最长30秒，下载为完整音频。",
+      "filePath": "/library/audio/effects/nature-wind-gust.wav",
+      "previewSrc": "/oss/library/audio/previews/nature-wind-gust.mp3",
+      "originalSrc": "/oss/library/audio/originals/expansion/nature-wind-gust.wav",
+      "duration": 4.235,
+      "bytes": 813258,
+      "sha256": "7ba22a86a6e917875a2ddf4c30e89f9a771ed11c5ecc3424be23485457593443",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    },
+    {
+      "id": "nature-ocean-wave-1",
+      "name": "大海海浪·波涛 1",
+      "category": "nature",
+      "categoryName": "自然声",
+      "description": "海滩波浪涌来与退去的实录片段；四条为不同波次，可用于海边场景剪辑。",
+      "traits": [
+        "大海",
+        "海浪",
+        "波涛",
+        "海滩",
+        "水声"
+      ],
+      "author": "jasinski（整理：qubodup）",
+      "license": "CC0-1.0",
+      "sourceUrl": "https://opengameart.org/content/beach-ocean-waves",
+      "provenance": "保留源文件，转换为48kHz双声道WAV，不提升原始音质；试听最长30秒，下载为完整音频。",
+      "recordingType": "实地录音",
+      "filePath": "/library/audio/effects/nature-ocean-wave-1.wav",
+      "previewSrc": "/oss/library/audio/previews/nature-ocean-wave-1.mp3",
+      "originalSrc": "/oss/library/audio/originals/expansion/nature-ocean-wave-1.flac",
+      "duration": 4.0,
+      "bytes": 768078,
+      "sha256": "8ee03135188fdac13ffa3655139287796e25688aa3919d5deaf294f551ec03af",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    },
+    {
+      "id": "nature-ocean-wave-2",
+      "name": "大海海浪·波涛 2",
+      "category": "nature",
+      "categoryName": "自然声",
+      "description": "海滩波浪涌来与退去的实录片段；四条为不同波次，可用于海边场景剪辑。",
+      "traits": [
+        "大海",
+        "海浪",
+        "波涛",
+        "海滩",
+        "水声"
+      ],
+      "author": "jasinski（整理：qubodup）",
+      "license": "CC0-1.0",
+      "sourceUrl": "https://opengameart.org/content/beach-ocean-waves",
+      "provenance": "保留源文件，转换为48kHz双声道WAV，不提升原始音质；试听最长30秒，下载为完整音频。",
+      "recordingType": "实地录音",
+      "filePath": "/library/audio/effects/nature-ocean-wave-2.wav",
+      "previewSrc": "/oss/library/audio/previews/nature-ocean-wave-2.mp3",
+      "originalSrc": "/oss/library/audio/originals/expansion/nature-ocean-wave-2.flac",
+      "duration": 2.5,
+      "bytes": 480078,
+      "sha256": "31dc45e739916bae1df7a90b4230d258f539f7e54a46abf3f6b7b3ad584baddc",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    },
+    {
+      "id": "nature-ocean-wave-3",
+      "name": "大海海浪·波涛 3",
+      "category": "nature",
+      "categoryName": "自然声",
+      "description": "海滩波浪涌来与退去的实录片段；四条为不同波次，可用于海边场景剪辑。",
+      "traits": [
+        "大海",
+        "海浪",
+        "波涛",
+        "海滩",
+        "水声"
+      ],
+      "author": "jasinski（整理：qubodup）",
+      "license": "CC0-1.0",
+      "sourceUrl": "https://opengameart.org/content/beach-ocean-waves",
+      "provenance": "保留源文件，转换为48kHz双声道WAV，不提升原始音质；试听最长30秒，下载为完整音频。",
+      "recordingType": "实地录音",
+      "filePath": "/library/audio/effects/nature-ocean-wave-3.wav",
+      "previewSrc": "/oss/library/audio/previews/nature-ocean-wave-3.mp3",
+      "originalSrc": "/oss/library/audio/originals/expansion/nature-ocean-wave-3.flac",
+      "duration": 2.25,
+      "bytes": 432078,
+      "sha256": "84b214b919690307da0cf59c7d69ed69a2cc80717b23ac18384faef93607dc1b",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    },
+    {
+      "id": "nature-ocean-wave-4",
+      "name": "大海海浪·波涛 4",
+      "category": "nature",
+      "categoryName": "自然声",
+      "description": "海滩波浪涌来与退去的实录片段；四条为不同波次，可用于海边场景剪辑。",
+      "traits": [
+        "大海",
+        "海浪",
+        "波涛",
+        "海滩",
+        "水声"
+      ],
+      "author": "jasinski（整理：qubodup）",
+      "license": "CC0-1.0",
+      "sourceUrl": "https://opengameart.org/content/beach-ocean-waves",
+      "provenance": "保留源文件，转换为48kHz双声道WAV，不提升原始音质；试听最长30秒，下载为完整音频。",
+      "recordingType": "实地录音",
+      "filePath": "/library/audio/effects/nature-ocean-wave-4.wav",
+      "previewSrc": "/oss/library/audio/previews/nature-ocean-wave-4.mp3",
+      "originalSrc": "/oss/library/audio/originals/expansion/nature-ocean-wave-4.flac",
+      "duration": 3.511,
+      "bytes": 674190,
+      "sha256": "e85fcc241bbfe8712380e5356a5269b8a929930fc86d7f095878e0cad9f97d29",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    },
+    {
+      "id": "nature-water-surge-1",
+      "name": "浪涌水声·拍岸 1",
+      "category": "nature",
+      "categoryName": "自然声",
+      "description": "独立波浪与水花冲刷声，适合水岸、船边或浪头切点。",
+      "traits": [
+        "浪涌",
+        "波浪",
+        "拍岸",
+        "水花"
+      ],
+      "author": "transitking（整理：qubodup）",
+      "license": "CC0-1.0",
+      "sourceUrl": "https://opengameart.org/content/water-waves",
+      "provenance": "保留源文件，转换为48kHz双声道WAV，不提升原始音质；试听最长30秒，下载为完整音频。",
+      "filePath": "/library/audio/effects/nature-water-surge-1.wav",
+      "previewSrc": "/oss/library/audio/previews/nature-water-surge-1.mp3",
+      "originalSrc": "/oss/library/audio/originals/expansion/nature-water-surge-1.flac",
+      "duration": 1.75,
+      "bytes": 336078,
+      "sha256": "0597a2eb03fda775ddcf5501a9a8ac2268e73ae2a18abcfbd8bdb04d35007331",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    },
+    {
+      "id": "nature-water-surge-2",
+      "name": "浪涌水声·拍岸 2",
+      "category": "nature",
+      "categoryName": "自然声",
+      "description": "独立波浪与水花冲刷声，适合水岸、船边或浪头切点。",
+      "traits": [
+        "浪涌",
+        "波浪",
+        "拍岸",
+        "水花"
+      ],
+      "author": "transitking（整理：qubodup）",
+      "license": "CC0-1.0",
+      "sourceUrl": "https://opengameart.org/content/water-waves",
+      "provenance": "保留源文件，转换为48kHz双声道WAV，不提升原始音质；试听最长30秒，下载为完整音频。",
+      "filePath": "/library/audio/effects/nature-water-surge-2.wav",
+      "previewSrc": "/oss/library/audio/previews/nature-water-surge-2.mp3",
+      "originalSrc": "/oss/library/audio/originals/expansion/nature-water-surge-2.flac",
+      "duration": 3.247,
+      "bytes": 623558,
+      "sha256": "19ee04c8142235bac6979e74a1064f4dc0c1397866992e858de898e615ae9542",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    },
+    {
+      "id": "nature-rain-loop-1",
+      "name": "窗边雨声·循环 1",
+      "category": "nature",
+      "categoryName": "自然声",
+      "description": "窗边实录雨声，经作者处理为立体声和循环片段，保留完整循环长度。",
+      "traits": [
+        "雨",
+        "雨声",
+        "循环",
+        "窗边"
+      ],
+      "author": "Ylmir",
+      "license": "CC0-1.0",
+      "sourceUrl": "https://opengameart.org/content/rain-loopable",
+      "provenance": "保留源文件，转换为48kHz双声道WAV，不提升原始音质；试听最长30秒，下载为完整音频。",
+      "loopable": true,
+      "recordingType": "实地录音",
+      "filePath": "/library/audio/effects/nature-rain-loop-1.wav",
+      "previewSrc": "/oss/library/audio/previews/nature-rain-loop-1.mp3",
+      "originalSrc": "/oss/library/audio/originals/expansion/rain.zip",
+      "duration": 27.0,
+      "bytes": 5184078,
+      "sha256": "2553a322f9eb2979ecbae5a464271ec68cd011580a1832c7b590c7acb03b26f7",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    },
+    {
+      "id": "nature-rain-loop-2",
+      "name": "窗边雨声·循环 2",
+      "category": "nature",
+      "categoryName": "自然声",
+      "description": "窗边实录雨声，经作者处理为立体声和循环片段，保留完整循环长度。",
+      "traits": [
+        "雨",
+        "雨声",
+        "循环",
+        "窗边"
+      ],
+      "author": "Ylmir",
+      "license": "CC0-1.0",
+      "sourceUrl": "https://opengameart.org/content/rain-loopable",
+      "provenance": "保留源文件，转换为48kHz双声道WAV，不提升原始音质；试听最长30秒，下载为完整音频。",
+      "loopable": true,
+      "recordingType": "实地录音",
+      "filePath": "/library/audio/effects/nature-rain-loop-2.wav",
+      "previewSrc": "/oss/library/audio/previews/nature-rain-loop-2.mp3",
+      "originalSrc": "/oss/library/audio/originals/expansion/rain.zip",
+      "duration": 26.0,
+      "bytes": 4992078,
+      "sha256": "005992e4101563c65e84796b94b9bb59fc5ada91336de498cfade695ba5a439f",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    },
+    {
+      "id": "nature-rain-loop-3",
+      "name": "窗边雨声·循环 3",
+      "category": "nature",
+      "categoryName": "自然声",
+      "description": "窗边实录雨声，经作者处理为立体声和循环片段，保留完整循环长度。",
+      "traits": [
+        "雨",
+        "雨声",
+        "循环",
+        "窗边"
+      ],
+      "author": "Ylmir",
+      "license": "CC0-1.0",
+      "sourceUrl": "https://opengameart.org/content/rain-loopable",
+      "provenance": "保留源文件，转换为48kHz双声道WAV，不提升原始音质；试听最长30秒，下载为完整音频。",
+      "loopable": true,
+      "recordingType": "实地录音",
+      "filePath": "/library/audio/effects/nature-rain-loop-3.wav",
+      "previewSrc": "/oss/library/audio/previews/nature-rain-loop-3.mp3",
+      "originalSrc": "/oss/library/audio/originals/expansion/rain.zip",
+      "duration": 45.0,
+      "bytes": 8640078,
+      "sha256": "c21459f473b0ca47518c8872f48e10178906dadd4feaecb4b7f537c6d5804c27",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    },
+    {
+      "id": "nature-rain-loop-4",
+      "name": "窗边雨声·循环 4",
+      "category": "nature",
+      "categoryName": "自然声",
+      "description": "窗边实录雨声，经作者处理为立体声和循环片段，保留完整循环长度。",
+      "traits": [
+        "雨",
+        "雨声",
+        "循环",
+        "窗边"
+      ],
+      "author": "Ylmir",
+      "license": "CC0-1.0",
+      "sourceUrl": "https://opengameart.org/content/rain-loopable",
+      "provenance": "保留源文件，转换为48kHz双声道WAV，不提升原始音质；试听最长30秒，下载为完整音频。",
+      "loopable": true,
+      "recordingType": "实地录音",
+      "filePath": "/library/audio/effects/nature-rain-loop-4.wav",
+      "previewSrc": "/oss/library/audio/previews/nature-rain-loop-4.mp3",
+      "originalSrc": "/oss/library/audio/originals/expansion/rain.zip",
+      "duration": 37.5,
+      "bytes": 7200078,
+      "sha256": "5bb685ebd49afd23fba54fb80fd728dcfb86c74e8689369608192fc5084bce38",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    },
+    {
+      "id": "nature-thunder-clap",
+      "name": "雷电·炸雷与回响",
+      "category": "nature",
+      "categoryName": "自然声",
+      "description": "雷击后的炸雷与低频回响；作者使用 cSound 合成，适合闪电画面的雷声。",
+      "traits": [
+        "雷",
+        "雷电",
+        "闪电",
+        "炸雷",
+        "合成"
+      ],
+      "author": "Jerimee",
+      "license": "CC-BY-3.0",
+      "sourceUrl": "https://opengameart.org/content/thunder",
+      "provenance": "保留源文件，转换为48kHz双声道WAV，不提升原始音质；试听最长30秒，下载为完整音频。",
+      "recordingType": "合成音效",
+      "filePath": "/library/audio/effects/nature-thunder-clap.wav",
+      "previewSrc": "/oss/library/audio/previews/nature-thunder-clap.mp3",
+      "originalSrc": "/oss/library/audio/originals/expansion/nature-thunder-clap.ogg",
+      "duration": 7.5,
+      "bytes": 1440078,
+      "sha256": "08ed5c577e213b4b4a1485deed741ec8289381126df9bb23af3c0245af9f7e54",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    },
+    {
+      "id": "nature-stream-woodland",
+      "name": "林间溪流·鸟语潺潺",
+      "category": "nature",
+      "categoryName": "自然声",
+      "description": "另一组溪流与鸟鸣自然实录，适合山涧、林间与清晨水边。",
+      "traits": [
+        "溪流",
+        "流水",
+        "山涧"
+      ],
+      "author": "Antoine Goumain (Antoinemax)",
+      "license": "CC-BY-4.0",
+      "sourceUrl": "https://opengameart.org/content/nature-sounds-pack",
+      "provenance": "保留源文件，转换为48kHz双声道WAV，不提升原始音质；试听最长30秒，下载为完整音频。",
+      "filePath": "/library/audio/effects/nature-stream-woodland.wav",
+      "previewSrc": "/oss/library/audio/previews/nature-stream-woodland.mp3",
+      "originalSrc": "/oss/library/audio/originals/extracted/Nature Sounds Pack/Stream/StreamAndBirds03.wav",
+      "duration": 10.0,
+      "bytes": 1920098,
+      "sha256": "c9594991239a60b8289d08d254a14867f11841a4fb30c966e15c8e78485cfc86",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    },
+    {
+      "id": "nature-storm-heavy",
+      "name": "雷雨交加·风暴氛围",
+      "category": "nature",
+      "categoryName": "自然声",
+      "description": "完整风暴雨声与雷鸣录音，用于暴雨天气与风暴场景。",
+      "traits": [
+        "雨",
+        "雷",
+        "暴雨",
+        "风暴"
+      ],
+      "author": "Antoine Goumain (Antoinemax)",
+      "license": "CC-BY-4.0",
+      "sourceUrl": "https://opengameart.org/content/nature-sounds-pack",
+      "provenance": "保留源文件，转换为48kHz双声道WAV，不提升原始音质；试听最长30秒，下载为完整音频。",
+      "filePath": "/library/audio/effects/nature-storm-heavy.wav",
+      "previewSrc": "/oss/library/audio/previews/nature-storm-heavy.mp3",
+      "originalSrc": "/oss/library/audio/originals/extracted/Nature Sounds Pack/Ambient/AmbientNatureStormRainThunder02.wav",
+      "duration": 13.0,
+      "bytes": 2496098,
+      "sha256": "647a416aa248f153c06b611978d07508ab700b6325c04ec08dbd309eb5656e3c",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    },
+    {
+      "id": "effect-electric-burst",
+      "name": "电流·短促放电",
+      "category": "effect",
+      "categoryName": "影视特效",
+      "description": "短促电子放电声，用于闪电特效、法术或电器火花；属于设计音效。",
+      "traits": [
+        "电",
+        "电流",
+        "放电",
+        "闪电",
+        "特效"
+      ],
+      "author": "Little Robot Sound Factory",
+      "license": "CC-BY-3.0",
+      "sourceUrl": "https://opengameart.org/content/electric-sound-effects-library",
+      "provenance": "从作者发布的WAV音效包选取，转为48kHz双声道WAV，保留完整时长；设计音效，不是自然闪电实录。",
+      "recordingType": "设计音效",
+      "filePath": "/library/audio/effects/effect-electric-burst.wav",
+      "previewSrc": "/oss/library/audio/previews/effect-electric-burst.mp3",
+      "originalSrc": "/oss/library/audio/originals/expansion/electric.zip",
+      "duration": 0.64,
+      "bytes": 122978,
+      "sha256": "799fe0d1b335baff6fdc21853de4e2f660db6d8ceb1bf2b12d29bd7996007ec2",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    },
+    {
+      "id": "effect-electric-static",
+      "name": "电流·持续静电噪声",
+      "category": "effect",
+      "categoryName": "影视特效",
+      "description": "持续静电与电子噪声，适合故障屏幕、电器或科幻空间。",
+      "traits": [
+        "电",
+        "静电",
+        "噪声",
+        "循环"
+      ],
+      "author": "Little Robot Sound Factory",
+      "license": "CC-BY-3.0",
+      "sourceUrl": "https://opengameart.org/content/electric-sound-effects-library",
+      "provenance": "从作者发布的WAV音效包选取，转为48kHz双声道WAV，保留完整时长；设计音效，不是自然闪电实录。",
+      "recordingType": "设计音效",
+      "filePath": "/library/audio/effects/effect-electric-static.wav",
+      "previewSrc": "/oss/library/audio/previews/effect-electric-static.mp3",
+      "originalSrc": "/oss/library/audio/originals/expansion/electric.zip",
+      "duration": 24.5,
+      "bytes": 4704098,
+      "sha256": "ab1fcd57bc22a344485774f349453d32c7a607294cb362df1001b695b2192820",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    },
+    {
+      "id": "effect-electric-whoosh",
+      "name": "电光·掠过与转场",
+      "category": "effect",
+      "categoryName": "影视特效",
+      "description": "电光掠过的动态音效，适合神通、法术、快速运动和转场。",
+      "traits": [
+        "电",
+        "电光",
+        "转场",
+        "法术"
+      ],
+      "author": "Little Robot Sound Factory",
+      "license": "CC-BY-3.0",
+      "sourceUrl": "https://opengameart.org/content/electric-sound-effects-library",
+      "provenance": "从作者发布的WAV音效包选取，转为48kHz双声道WAV，保留完整时长；设计音效，不是自然闪电实录。",
+      "recordingType": "设计音效",
+      "filePath": "/library/audio/effects/effect-electric-whoosh.wav",
+      "previewSrc": "/oss/library/audio/previews/effect-electric-whoosh.mp3",
+      "originalSrc": "/oss/library/audio/originals/expansion/electric.zip",
+      "duration": 0.779,
+      "bytes": 149746,
+      "sha256": "4743e50f92f8c2b1c2bb57d4231d12d1a6d9ce3387ebc6dbf092765e3101d3d5",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    },
+    {
+      "id": "effect-electric-charge",
+      "name": "电能·蓄势氛围",
+      "category": "effect",
+      "categoryName": "影视特效",
+      "description": "电子能量持续氛围，适合法阵、电场和科幻场景。",
+      "traits": [
+        "电",
+        "能量",
+        "电场",
+        "氛围"
+      ],
+      "author": "Little Robot Sound Factory",
+      "license": "CC-BY-3.0",
+      "sourceUrl": "https://opengameart.org/content/electric-sound-effects-library",
+      "provenance": "从作者发布的WAV音效包选取，转为48kHz双声道WAV，保留完整时长；设计音效，不是自然闪电实录。",
+      "recordingType": "设计音效",
+      "filePath": "/library/audio/effects/effect-electric-charge.wav",
+      "previewSrc": "/oss/library/audio/previews/effect-electric-charge.mp3",
+      "originalSrc": "/oss/library/audio/originals/expansion/electric.zip",
+      "duration": 10.0,
+      "bytes": 1920098,
+      "sha256": "c40d14e9d58ddb0014839403839df21aab70b7ca2c87adc4b485c68097c09889",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    },
+    {
+      "id": "insect-crickets",
+      "name": "夜间蟋蟀",
+      "category": "insect",
+      "categoryName": "虫鸣",
+      "description": "夜间蟋蟀持续鸣叫。原录音为可循环环境声。",
+      "filePath": "/library/audio/effects/insect-crickets.wav",
+      "author": "Ted Kerr (Wolfgang_)",
+      "license": "CC0-1.0",
+      "sourceUrl": "https://opengameart.org/content/crickets-ambient-noise-loopable",
+      "provenance": "下载素材，转为单声道 24kHz WAV；超过30秒保留前30秒，原始文件另存。",
+      "sourceFile": "originals/crickets.mp3",
+      "duration": 11.452,
+      "bytes": 549778,
+      "sha256": "43090012325199b42de3cabbb75355a7643b45b71db7e087a7849f7c86b313dd",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "insect-grasshopper",
+      "name": "蚱蜢鸣叫",
+      "category": "insect",
+      "categoryName": "虫鸣",
+      "description": "蚱蜢鸣叫的短音效。",
+      "filePath": "/library/audio/effects/insect-grasshopper.wav",
+      "author": "straget; edited by AntumDeluge",
+      "license": "CC0-1.0",
+      "sourceUrl": "https://opengameart.org/content/grasshopper",
+      "provenance": "下载素材，转为单声道 24kHz WAV；超过30秒保留前30秒，原始文件另存。",
+      "sourceFile": "originals/extracted/grasshopper.flac",
+      "duration": 1.848,
+      "bytes": 88802,
+      "sha256": "255fc28ad7f85aadac63d74b25d8b4029f34038f28ca5f1342bbf34bb51f4fe8",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "animal-dog",
+      "name": "犬吠",
+      "category": "mammal",
+      "categoryName": "走兽",
+      "description": "犬吠录音，适合犬类角色或街巷院落。",
+      "filePath": "/library/audio/effects/animal-dog.wav",
+      "author": "Brandon Morris (Augmentality / HaelDB)",
+      "license": "CC0-1.0",
+      "sourceUrl": "https://opengameart.org/content/random-sounds-samples",
+      "provenance": "下载素材，转为单声道 24kHz WAV；超过30秒保留前30秒，原始文件另存。",
+      "sourceFile": "originals/dog.ogg",
+      "duration": 8.498,
+      "bytes": 407980,
+      "sha256": "3e5d560ba0a63dbbf7957053c2219a320a6e3df1a67f468de85a65d692855915",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "animal-cat",
+      "name": "猫叫",
+      "category": "mammal",
+      "categoryName": "走兽",
+      "description": "短促猫叫音效。",
+      "filePath": "/library/audio/effects/animal-cat.wav",
+      "author": "IgnasD",
+      "license": "CC0-1.0",
+      "sourceUrl": "https://opengameart.org/content/meow",
+      "provenance": "下载素材，转为单声道 24kHz WAV；超过30秒保留前30秒，原始文件另存。",
+      "sourceFile": "originals/cat.ogg",
+      "duration": 0.511,
+      "bytes": 24584,
+      "sha256": "8c9b7f35d011313f2d9e3fad45f65b9f37c408dd0e993b091d37691736afd0f9",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "animal-sheep",
+      "name": "羊咩声",
+      "category": "mammal",
+      "categoryName": "走兽",
+      "description": "绵羊咩叫，短促单次音效。",
+      "filePath": "/library/audio/effects/animal-sheep.wav",
+      "author": "mikewest; edited by AntumDeluge",
+      "license": "CC0-1.0",
+      "sourceUrl": "https://opengameart.org/content/sheep-baa",
+      "provenance": "下载素材，转为单声道 24kHz WAV；超过30秒保留前30秒，原始文件另存。",
+      "sourceFile": "originals/sheep.flac",
+      "duration": 0.872,
+      "bytes": 41972,
+      "sha256": "bf2b75a7d14050d85f62cc25537a175da974ec50fdb8eeb341b3982c80af7842",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "bird-crow",
+      "name": "乌鸦叫",
+      "category": "bird",
+      "categoryName": "鸟鸣飞禽",
+      "description": "乌鸦鸣叫实地录音。",
+      "filePath": "/library/audio/effects/bird-crow.wav",
+      "author": "zeroisnotnull",
+      "license": "CC0-1.0",
+      "sourceUrl": "https://opengameart.org/content/crow-caw",
+      "provenance": "下载素材，转为单声道 24kHz WAV；超过30秒保留前30秒，原始文件另存。",
+      "sourceFile": "originals/crow.wav",
+      "duration": 0.546,
+      "bytes": 26278,
+      "sha256": "43dda103c5692652671849db1cc7c1311027922d47f649c830275670e055aede",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "bird-seagull",
+      "name": "海鸥鸣叫",
+      "category": "bird",
+      "categoryName": "鸟鸣飞禽",
+      "description": "单只海鸥的鸣叫片段。",
+      "filePath": "/library/audio/effects/bird-seagull.wav",
+      "author": "Rango Mango",
+      "license": "CC0-1.0",
+      "sourceUrl": "https://opengameart.org/content/solo-seagull-sound-effects",
+      "provenance": "下载素材，转为单声道 24kHz WAV；超过30秒保留前30秒，原始文件另存。",
+      "sourceFile": "originals/gull.wav",
+      "duration": 3.892,
+      "bytes": 186906,
+      "sha256": "48cffb04a452514a1724c958826db607afda107d581744ac8897eb0012eb8580",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "bird-forest",
+      "name": "林鸟与水声",
+      "category": "bird",
+      "categoryName": "鸟鸣飞禽",
+      "description": "林鸟鸣叫与附近水声混合的自然环境。",
+      "filePath": "/library/audio/effects/bird-forest.wav",
+      "author": "Antoine Goumain (Antoinemax)",
+      "license": "CC-BY-4.0",
+      "sourceUrl": "https://opengameart.org/content/nature-sounds-pack",
+      "provenance": "下载素材，转为单声道 24kHz WAV；超过30秒保留前30秒，原始文件另存。",
+      "sourceFile": "originals/extracted/Nature Sounds Pack/Ambient/AmbientNatureBirdsWater01.wav",
+      "duration": 10.0,
+      "bytes": 480098,
+      "sha256": "654ec1739f3d76622d5f490d3872a5bab3d2c0495986067fed4caf9de4b798f8",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "24000",
+        "channels": 1
+      }
+    },
+    {
+      "id": "music-guzheng",
+      "name": "古筝与二胡·帝国山河",
+      "instrument": "古筝 / 二胡 / 尺八 / 管弦乐",
+      "traits": [
+        "史诗",
+        "东方"
+      ],
+      "description": "Imperial China Cinematic，以古筝、二胡、尺八与管弦乐构成的东方电影配乐。",
+      "author": "Shane Ivers (Silverman Sound)",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://www.silvermansound.com/free-music/imperial-china-cinematic",
+      "category": "music",
+      "categoryName": "影视配乐",
+      "filePath": "/library/audio/music/music-guzheng.wav",
+      "previewSrc": "/oss/library/audio/previews/music-guzheng.mp3",
+      "originalSrc": "/oss/library/audio/originals/music/music-guzheng.mp3",
+      "provenance": "下载器乐音乐，保留下载源文件；全长转为双声道24kHz WAV，另提供前30秒MP3试听。乐器标签为主奏或编配，非单轨分离。",
+      "duration": 201.6,
+      "bytes": 19353770,
+      "sha256": "abbc6d820b964b8a417e418c39b7b481b84b9fdbbb9593e19acf79d7717336c5",
+      "originalSha256": "4a8bf29f72af49ad3e031f2c4f6c4bc05af2b2fadc2013dccb4dbaa4e800bc54"
+    },
+    {
+      "id": "music-erhu-trailer",
+      "name": "二胡·悬疑预告",
+      "instrument": "二胡 / 弦乐",
+      "traits": [
+        "悬疑",
+        "紧张"
+      ],
+      "description": "Erhu Trailer，二胡音色与多乐器编配的电影预告配乐。",
+      "author": "Mark_Murray",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://freesound.org/people/Mark_Murray/sounds/634648/",
+      "category": "music",
+      "categoryName": "影视配乐",
+      "filePath": "/library/audio/music/music-erhu-trailer.wav",
+      "previewSrc": "/oss/library/audio/previews/music-erhu-trailer.mp3",
+      "originalSrc": "/oss/library/audio/originals/music/music-erhu-trailer.mp3",
+      "provenance": "下载器乐音乐，保留下载源文件；全长转为双声道24kHz WAV，另提供前30秒MP3试听。乐器标签为主奏或编配，非单轨分离。 下载的是来源公开提供的高品质MP3预览版本，非原始无损录音。",
+      "duration": 84.05,
+      "bytes": 8068882,
+      "sha256": "8d0b4a20357382437bb08cfdddc9b9c645f6a3f01ef9bbfe9bc60383e200e05f",
+      "originalSha256": "7577eb0f1c655e56a1e56ea1200a6d6b4e05d20031127c300c45ad3137bcd393"
+    },
+    {
+      "id": "music-suona-opera",
+      "name": "唢呐与锣鼓·戏曲过场",
+      "instrument": "唢呐 / 锣鼓",
+      "traits": [
+        "民俗",
+        "热烈"
+      ],
+      "description": "北京戏曲现场的唢呐与锣鼓片段，含现场空间声。",
+      "author": "xserra",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://freesound.org/people/xserra/sounds/162035/",
+      "collection": "opera",
+      "operaGenre": "京剧",
+      "materialType": "器乐过场",
+      "category": "music",
+      "categoryName": "影视配乐",
+      "filePath": "/library/audio/music/music-suona-opera.wav",
+      "previewSrc": "/oss/library/audio/previews/music-suona-opera.mp3",
+      "originalSrc": "/oss/library/audio/originals/music/music-suona-opera.mp3",
+      "provenance": "下载器乐音乐，保留下载源文件；全长转为双声道24kHz WAV，另提供前30秒MP3试听。乐器标签为主奏或编配，非单轨分离。 下载的是来源公开提供的高品质MP3预览版本，非原始无损录音。",
+      "duration": 38.216,
+      "bytes": 3668858,
+      "sha256": "8ebc52fb09551ba51dfad02f364a5f97a380ed992bc373ef2253c10901ce49c1",
+      "originalSha256": "988d891a7e05afc3e75e39f10cc55cf1e7f7d48d86c24b33560a9ce506a9cbaa"
+    },
+    {
+      "id": "music-suona-ritual",
+      "name": "唢呐·民俗仪式",
+      "instrument": "唢呐 / 民乐",
+      "traits": [
+        "民俗",
+        "仪式"
+      ],
+      "description": "香港民俗仪式现场民乐录音，包含唢呐与现场环境声。",
+      "author": "soloan",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://freesound.org/people/soloan/sounds/437470/",
+      "category": "music",
+      "categoryName": "影视配乐",
+      "filePath": "/library/audio/music/music-suona-ritual.wav",
+      "previewSrc": "/oss/library/audio/previews/music-suona-ritual.mp3",
+      "originalSrc": "/oss/library/audio/originals/music/music-suona-ritual.mp3",
+      "provenance": "下载器乐音乐，保留下载源文件；全长转为双声道24kHz WAV，另提供前30秒MP3试听。乐器标签为主奏或编配，非单轨分离。 下载的是来源公开提供的高品质MP3预览版本，非原始无损录音。",
+      "duration": 307.861,
+      "bytes": 29554766,
+      "sha256": "3546565ab862735f14f1a99c963d029e00993fa6bb8d79b71bc04a9d8d360344",
+      "originalSha256": "8e2f8d680119525efda04303a73dab8b81f494e67c74cf73c203fb2e4beb7942"
+    },
+    {
+      "id": "music-piano-light",
+      "name": "钢琴·轻盈小品",
+      "instrument": "钢琴",
+      "traits": [
+        "轻快",
+        "童趣"
+      ],
+      "description": "A Simple Trifle，轻巧钢琴独奏。",
+      "author": "jestar",
+      "license": "CC0-1.0",
+      "sourceUrl": "https://opengameart.org/content/a-simple-trifle",
+      "category": "music",
+      "categoryName": "影视配乐",
+      "filePath": "/library/audio/music/music-piano-light.wav",
+      "previewSrc": "/oss/library/audio/previews/music-piano-light.mp3",
+      "originalSrc": "/oss/library/audio/originals/music/music-piano-light.ogg",
+      "provenance": "下载器乐音乐，保留下载源文件；全长转为双声道24kHz WAV，另提供前30秒MP3试听。乐器标签为主奏或编配，非单轨分离。",
+      "duration": 24.123,
+      "bytes": 2315934,
+      "sha256": "ead128335ec834afc2eec1c26b8fc669748601d2535cb3f9ec2032a18c29567f",
+      "originalSha256": "40353641ca8e968d63342c655bb3972a87382d2b808a07b550e849daa4a593bb"
+    },
+    {
+      "id": "music-piano-sad",
+      "name": "钢琴·感伤回忆",
+      "instrument": "钢琴",
+      "traits": [
+        "忧伤",
+        "回忆"
+      ],
+      "description": "Cursed Light，抒情独奏钢琴主题。",
+      "author": "Cethiel",
+      "license": "CC0-1.0",
+      "sourceUrl": "https://opengameart.org/content/cursed-light",
+      "category": "music",
+      "categoryName": "影视配乐",
+      "filePath": "/library/audio/music/music-piano-sad.wav",
+      "previewSrc": "/oss/library/audio/previews/music-piano-sad.mp3",
+      "originalSrc": "/oss/library/audio/originals/music/music-piano-sad.flac",
+      "provenance": "下载器乐音乐，保留下载源文件；全长转为双声道24kHz WAV，另提供前30秒MP3试听。乐器标签为主奏或编配，非单轨分离。",
+      "duration": 48.938,
+      "bytes": 4698122,
+      "sha256": "3e1f9d822103ee851d900059336954c80ade70fe4871e1e501aa2bb5a85218dc",
+      "originalSha256": "5f96aa941e7f31f8d26cf76b49c3422d0701cf2a29bf6ad34d6808e58d7ac90d"
+    },
+    {
+      "id": "music-strings-ending",
+      "name": "弦乐与钢琴·片尾",
+      "instrument": "小提琴 / 中提琴 / 钢琴",
+      "traits": [
+        "抒情",
+        "片尾"
+      ],
+      "description": "Ending Scene 管弦乐版本，以弦乐和钢琴塑造片尾情绪。",
+      "author": "nene",
+      "license": "CC0-1.0",
+      "sourceUrl": "https://opengameart.org/content/ending-scene",
+      "category": "music",
+      "categoryName": "影视配乐",
+      "filePath": "/library/audio/music/music-strings-ending.wav",
+      "previewSrc": "/oss/library/audio/previews/music-strings-ending.mp3",
+      "originalSrc": "/oss/library/audio/originals/music/music-strings-ending.wav",
+      "provenance": "下载器乐音乐，保留下载源文件；全长转为双声道24kHz WAV，另提供前30秒MP3试听。乐器标签为主奏或编配，非单轨分离。",
+      "duration": 145.768,
+      "bytes": 13993852,
+      "sha256": "a0de329a9fee43110f3ab15a6891e96bf31d02268b1962705cb504cddd23ce44",
+      "originalSha256": "3e0702b3ec4c48eaee852174e2cbb5252655704b47fb716aa9ccb8df7e910a9c"
+    },
+    {
+      "id": "music-cello-home",
+      "name": "大提琴与钢琴·归途",
+      "instrument": "大提琴 / 钢琴",
+      "traits": [
+        "思念",
+        "悲伤"
+      ],
+      "description": "I Want to Go Home，钢琴、大提琴与少量合唱的抒情配乐。",
+      "author": "Eldritch Grim；原曲 Rafael Krux",
+      "license": "CC0-1.0",
+      "sourceUrl": "https://opengameart.org/content/i-want-to-go-home",
+      "category": "music",
+      "categoryName": "影视配乐",
+      "filePath": "/library/audio/music/music-cello-home.wav",
+      "previewSrc": "/oss/library/audio/previews/music-cello-home.mp3",
+      "originalSrc": "/oss/library/audio/originals/music/music-cello-home.wav",
+      "provenance": "下载器乐音乐，保留下载源文件；全长转为双声道24kHz WAV，另提供前30秒MP3试听。乐器标签为主奏或编配，非单轨分离。",
+      "duration": 194.0,
+      "bytes": 18624098,
+      "sha256": "86d77adef49479b7d0dc4d6d0474d5a74002d41813be8388a426c956571a56c4",
+      "originalSha256": "393d7a18afcd24123c027ec9df56c99b8c0e4e5c8022e510d4588ec5a70725d3"
+    },
+    {
+      "id": "music-flute-lute",
+      "name": "长笛与鲁特琴·旅人",
+      "instrument": "长笛 / 鲁特琴",
+      "traits": [
+        "田园",
+        "悠闲"
+      ],
+      "description": "The Bard’s Tale，中世纪风格器乐主题。",
+      "author": "RandomMind",
+      "license": "CC0-1.0",
+      "sourceUrl": "https://opengameart.org/content/medieval-the-bards-tale",
+      "category": "music",
+      "categoryName": "影视配乐",
+      "filePath": "/library/audio/music/music-flute-lute.wav",
+      "previewSrc": "/oss/library/audio/previews/music-flute-lute.mp3",
+      "originalSrc": "/oss/library/audio/originals/music/music-flute-lute.mp3",
+      "provenance": "下载器乐音乐，保留下载源文件；全长转为双声道24kHz WAV，另提供前30秒MP3试听。乐器标签为主奏或编配，非单轨分离。",
+      "duration": 158.589,
+      "bytes": 15224732,
+      "sha256": "9c3b7bca562003d52bfab66854d39453c51db0136f5c3121ec2d9ff6486d8fca",
+      "originalSha256": "6e93e8e8215bea17a209c321c182111058e024c53e3ad775ce1481ca1d1fcfc2"
+    },
+    {
+      "id": "music-orchestra-hero",
+      "name": "铜管弦乐·英雄归来",
+      "instrument": "管弦乐 / 铜管 / 小提琴",
+      "traits": [
+        "史诗",
+        "凯旋"
+      ],
+      "description": "Hero’s Reprise，管弦乐、打击乐与合唱的短主题。",
+      "author": "nene",
+      "license": "CC0-1.0",
+      "sourceUrl": "https://opengameart.org/content/heros-reprise",
+      "category": "music",
+      "categoryName": "影视配乐",
+      "filePath": "/library/audio/music/music-orchestra-hero.wav",
+      "previewSrc": "/oss/library/audio/previews/music-orchestra-hero.mp3",
+      "originalSrc": "/oss/library/audio/originals/music/music-orchestra-hero.wav",
+      "provenance": "下载器乐音乐，保留下载源文件；全长转为双声道24kHz WAV，另提供前30秒MP3试听。乐器标签为主奏或编配，非单轨分离。",
+      "duration": 29.895,
+      "bytes": 2869962,
+      "sha256": "35aff0b6c175b6219c0f489e9a4e72aed8af966529f4fb12b06aef994b2d0e9a",
+      "originalSha256": "d1922378014f4b19ca435450db033b6fbd16f1f6d0881df5189c0d6405e36a66"
+    },
+    {
+      "id": "music-orchestra-mystery",
+      "name": "管弦乐·奇幻秘境",
+      "instrument": "管弦乐",
+      "traits": [
+        "奇幻",
+        "史诗"
+      ],
+      "description": "Arcanum，奇幻叙事管弦配乐。",
+      "author": "vitalezzz",
+      "license": "CC0-1.0",
+      "sourceUrl": "https://opengameart.org/content/arcanum",
+      "category": "music",
+      "categoryName": "影视配乐",
+      "filePath": "/library/audio/music/music-orchestra-mystery.wav",
+      "previewSrc": "/oss/library/audio/previews/music-orchestra-mystery.mp3",
+      "originalSrc": "/oss/library/audio/originals/music/music-orchestra-mystery.mp3",
+      "provenance": "下载器乐音乐，保留下载源文件；全长转为双声道24kHz WAV，另提供前30秒MP3试听。乐器标签为主奏或编配，非单轨分离。",
+      "duration": 161.254,
+      "bytes": 15480464,
+      "sha256": "83d78309142d6772f132b6528c4142d27811385e0b2e82ed3ca11e519e146e4f",
+      "originalSha256": "07069ece85e0edf531e2add88ca9974ec0aa7370a39312244d26de6f01250e12"
+    },
+    {
+      "id": "opera-jingju-dan-stage",
+      "name": "京剧·旦角舞台唱段",
+      "instrument": "人声 / 板鼓",
+      "traits": [
+        "中国戏曲",
+        "京剧",
+        "唱段"
+      ],
+      "description": "北京正乙祠戏楼的旦角唱段与板鼓片段，保留戏台空间声，适合戏楼背景。",
+      "author": "xserra",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://freesound.org/people/xserra/sounds/162046/",
+      "collection": "opera",
+      "operaGenre": "京剧",
+      "materialType": "唱段",
+      "category": "music",
+      "categoryName": "影视配乐",
+      "filePath": "/library/audio/music/opera-jingju-dan-stage.wav",
+      "previewSrc": "/oss/library/audio/previews/opera-jingju-dan-stage.mp3",
+      "originalSrc": "/oss/library/audio/originals/music/opera-jingju-dan-stage.mp3",
+      "provenance": "现场录音，保留演唱、器乐及原有空间声；全长转为双声道48kHz WAV，另提供最长30秒试听。 下载的是来源公开提供的高品质MP3预览版本，非原始无损录音。",
+      "duration": 11.868,
+      "bytes": 2278734,
+      "sha256": "5ad2506fdb2880353188e42e380c4f96670ca7ad44a9b1e7eaedcdb33e25a3a8",
+      "originalSha256": "e2f19fe73931d0b9f9b24db7e7907867a64455207969f07e86b67f990b787b2c"
+    },
+    {
+      "id": "opera-jingju-dan-rehearsal",
+      "name": "京剧·旦角合练",
+      "instrument": "人声 / 鼓板",
+      "traits": [
+        "中国戏曲",
+        "京剧",
+        "唱腔排练"
+      ],
+      "description": "戏曲学院旦角唱腔课堂合练，包含教师打拍与排练空间声。",
+      "author": "xserra",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://freesound.org/people/xserra/sounds/320218/",
+      "collection": "opera",
+      "operaGenre": "京剧",
+      "materialType": "唱腔排练",
+      "category": "music",
+      "categoryName": "影视配乐",
+      "filePath": "/library/audio/music/opera-jingju-dan-rehearsal.wav",
+      "previewSrc": "/oss/library/audio/previews/opera-jingju-dan-rehearsal.mp3",
+      "originalSrc": "/oss/library/audio/originals/music/opera-jingju-dan-rehearsal.mp3",
+      "provenance": "现场录音，保留演唱、器乐及原有空间声；全长转为双声道48kHz WAV，另提供最长30秒试听。 下载的是来源公开提供的高品质MP3预览版本，非原始无损录音。",
+      "duration": 115.641,
+      "bytes": 22203150,
+      "sha256": "14b430400e5d65d389361fea9d5c46f81fd9852125adf871a9505be238b7ca25",
+      "originalSha256": "62334505c24e37d86816b3e4df22727f4071e46f8a4ab3ddadfe79353131d412"
+    },
+    {
+      "id": "opera-jingju-jingerhu",
+      "name": "京剧·京二胡排练",
+      "instrument": "京二胡 / 人声",
+      "traits": [
+        "中国戏曲",
+        "京剧",
+        "器乐排练"
+      ],
+      "description": "京二胡课堂演奏，包含教师示唱与打拍；适合梨园排练场景，不是纯器乐独奏。",
+      "author": "xserra",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://freesound.org/people/xserra/sounds/320221/",
+      "collection": "opera",
+      "operaGenre": "京剧",
+      "materialType": "器乐排练",
+      "category": "music",
+      "categoryName": "影视配乐",
+      "filePath": "/library/audio/music/opera-jingju-jingerhu.wav",
+      "previewSrc": "/oss/library/audio/previews/opera-jingju-jingerhu.mp3",
+      "originalSrc": "/oss/library/audio/originals/music/opera-jingju-jingerhu.mp3",
+      "provenance": "现场录音，保留演唱、器乐及原有空间声；全长转为双声道48kHz WAV，另提供最长30秒试听。 下载的是来源公开提供的高品质MP3预览版本，非原始无损录音。",
+      "duration": 70.261,
+      "bytes": 13490186,
+      "sha256": "07580101d70948b2baff2ec81b01cf4f8f16a27359b1cdbe397e7b4782da057f",
+      "originalSha256": "14a59dfda2dbd134a91f0f55a9d087c87a8f9a0a7294f2ba7ad52f3e5a218776"
+    },
+    {
+      "id": "opera-jingju-yueqin",
+      "name": "京剧·月琴排练",
+      "instrument": "月琴 / 人声",
+      "traits": [
+        "中国戏曲",
+        "京剧",
+        "器乐排练"
+      ],
+      "description": "月琴课堂演奏，包含教师示唱与打拍，适合戏班后台及教学场景。",
+      "author": "xserra",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://freesound.org/people/xserra/sounds/320220/",
+      "collection": "opera",
+      "operaGenre": "京剧",
+      "materialType": "器乐排练",
+      "category": "music",
+      "categoryName": "影视配乐",
+      "filePath": "/library/audio/music/opera-jingju-yueqin.wav",
+      "previewSrc": "/oss/library/audio/previews/opera-jingju-yueqin.mp3",
+      "originalSrc": "/oss/library/audio/originals/music/opera-jingju-yueqin.mp3",
+      "provenance": "现场录音，保留演唱、器乐及原有空间声；全长转为双声道48kHz WAV，另提供最长30秒试听。 下载的是来源公开提供的高品质MP3预览版本，非原始无损录音。",
+      "duration": 69.55,
+      "bytes": 13353694,
+      "sha256": "3418176f4321ece6566ead985248441a3eb004aaf45591622379f1e6afc6a75b",
+      "originalSha256": "72fe766fc718c408955d29cc5045246517fa34b5c91c9b6694693562cca87826"
+    },
+    {
+      "id": "opera-jingju-percussion",
+      "name": "京剧·锣鼓合奏",
+      "instrument": "板鼓 / 大锣 / 小锣 / 铙钹",
+      "traits": [
+        "中国戏曲",
+        "京剧",
+        "锣鼓"
+      ],
+      "description": "戏曲学院锣鼓合奏课堂录音，适合戏台开场、动作过场及排练氛围。",
+      "author": "xserra",
+      "license": "CC BY 4.0",
+      "sourceUrl": "https://freesound.org/people/xserra/sounds/320216/",
+      "collection": "opera",
+      "operaGenre": "京剧",
+      "materialType": "锣鼓",
+      "category": "music",
+      "categoryName": "影视配乐",
+      "filePath": "/library/audio/music/opera-jingju-percussion.wav",
+      "previewSrc": "/oss/library/audio/previews/opera-jingju-percussion.mp3",
+      "originalSrc": "/oss/library/audio/originals/music/opera-jingju-percussion.mp3",
+      "provenance": "现场录音，保留演唱、器乐及原有空间声；全长转为双声道48kHz WAV，另提供最长30秒试听。 下载的是来源公开提供的高品质MP3预览版本，非原始无损录音。",
+      "duration": 210.744,
+      "bytes": 40462986,
+      "sha256": "131cd9960f97b3284d31cf600e0c5f82df9860d066d369d73d32ab046a5094f2",
+      "originalSha256": "e71392c973fb2087ed07ec83aeab95673520e491b380e09f4ac5a292ed5f7f87"
+    },
+    {
+      "id": "opera-yuju-folk",
+      "name": "豫剧·民间演唱",
+      "instrument": "人声 / 戏曲伴奏",
+      "traits": [
+        "中国戏曲",
+        "豫剧",
+        "现场"
+      ],
+      "description": "河南漯河民间豫剧演唱现场，包含人声和环境氛围，适合街巷戏台背景。",
+      "author": "2356877332",
+      "license": "CC BY-SA 3.0",
+      "sourceUrl": "https://archive.org/details/aporee_54443_62275",
+      "collection": "opera",
+      "operaGenre": "豫剧",
+      "materialType": "现场唱段",
+      "category": "music",
+      "categoryName": "影视配乐",
+      "filePath": "/library/audio/music/opera-yuju-folk.wav",
+      "previewSrc": "/oss/library/audio/previews/opera-yuju-folk.mp3",
+      "originalSrc": "/oss/library/audio/originals/music/opera-yuju-folk.mp3",
+      "provenance": "下载来源发布的原始MP3文件，保留演唱与现场环境声；全长转为双声道48kHz WAV，另提供最长30秒试听。",
+      "duration": 179.827,
+      "bytes": 34527070,
+      "sha256": "c1ea3e110532c48d8c226e7e89ea17847c4e812a22b5a1bee9086ee62cc8bc39",
+      "originalSha256": "94ba9b6bf536265a057dcf0b96ad5faab524eaf05d27a07e4ed9dbb713428a15"
+    },
+    {
+      "id": "opera-gezaixi-beitou",
+      "name": "歌仔戏·北投现场",
+      "instrument": "人声 / 戏曲伴奏",
+      "traits": [
+        "中国戏曲",
+        "歌仔戏",
+        "现场"
+      ],
+      "description": "台北北投歌仔戏演出现场，保留剧场唱腔、伴奏及环境氛围。",
+      "author": "Wu,Tsan-Cheng",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://archive.org/details/aporee_18909_21924",
+      "collection": "opera",
+      "operaGenre": "歌仔戏",
+      "materialType": "现场唱段",
+      "category": "music",
+      "categoryName": "影视配乐",
+      "filePath": "/library/audio/music/opera-gezaixi-beitou.wav",
+      "previewSrc": "/oss/library/audio/previews/opera-gezaixi-beitou.mp3",
+      "originalSrc": "/oss/library/audio/originals/music/opera-gezaixi-beitou.mp3",
+      "provenance": "下载来源发布的原始MP3文件，保留演唱与现场环境声；全长转为双声道48kHz WAV，另提供最长30秒试听。",
+      "duration": 428.064,
+      "bytes": 82188490,
+      "sha256": "23d8dc6f22695fa226045b07c202bd50c101fb3d8f96c5076cfb48190b2c333f",
+      "originalSha256": "2ae83164020e83ea5b5e4ac699ac21a4513bd228262b735efda458c9137ee164"
+    },
+    {
+      "id": "opera-gezaixi-kaohsiung",
+      "name": "歌仔戏·高雄收场",
+      "instrument": "人声 / 戏曲伴奏",
+      "traits": [
+        "中国戏曲",
+        "歌仔戏",
+        "现场"
+      ],
+      "description": "高雄民间歌仔戏演出现场，末尾含主持说明，适合戏台收场氛围。",
+      "author": "Wu,Tsan-Cheng",
+      "license": "CC BY 3.0",
+      "sourceUrl": "https://archive.org/details/aporee_17131_19941",
+      "collection": "opera",
+      "operaGenre": "歌仔戏",
+      "materialType": "现场唱段",
+      "category": "music",
+      "categoryName": "影视配乐",
+      "filePath": "/library/audio/music/opera-gezaixi-kaohsiung.wav",
+      "previewSrc": "/oss/library/audio/previews/opera-gezaixi-kaohsiung.mp3",
+      "originalSrc": "/oss/library/audio/originals/music/opera-gezaixi-kaohsiung.mp3",
+      "provenance": "下载来源发布的原始MP3文件，保留演唱与现场环境声；全长转为双声道48kHz WAV，另提供最长30秒试听。",
+      "duration": 60.552,
+      "bytes": 11626198,
+      "sha256": "a3a9ad97c03e9063c3df39fc5a7c612a42c03daaf6635a80c9a99a98c3a46e4a",
+      "originalSha256": "9fb3ac19fbd9ea09803285f66fd49d7e5fbc93d4bc07f02e81ecce348a04bd3f"
+    },
+    {
+      "id": "classic-wukong-entrance-yungong",
+      "name": "孙悟空出场配乐·《云宫迅音》",
+      "category": "music",
+      "categoryName": "影视配乐",
+      "description": "央视发布的《西游记》序曲《云宫迅音》音轨，用作大圣出场与西游氛围选材参考；这是配乐，不是人物台词。",
+      "traits": [
+        "孙悟空",
+        "出场",
+        "云宫迅音",
+        "西游记",
+        "序曲",
+        "经典"
+      ],
+      "author": "许镜清（作曲）；央视发布",
+      "license": "版权保留 · 未附再利用授权",
+      "sourceUrl": "https://tv.cctv.com/2018/09/06/VIDECU1XosNT9PfHrHbU2zdU180906.shtml",
+      "provenance": "从央视官方公开、未加密音频流保存完整节目音轨，转为48kHz双声道WAV；试听为前30秒。非AI仿声，非授权素材包。",
+      "collection": "classic",
+      "materialType": "出场配乐",
+      "usageNotice": "经典节目参考素材。来源页未提供开放再利用许可；公开发布、改编或商用前需向相关权利方确认授权。",
+      "recordingType": "影视节目原音",
+      "filePath": "/library/audio/music/classic-wukong-entrance-yungong.wav",
+      "previewSrc": "/oss/library/audio/previews/classic-wukong-entrance-yungong.mp3",
+      "originalSrc": "/oss/library/audio/originals/expansion/classic-wukong-entrance-yungong.m4a",
+      "duration": 169.173,
+      "bytes": 32481358,
+      "sha256": "6ac6d983b0c8ec8c247d5d887281701ed36f7d978e3672876d01a76725bd414e",
+      "audioFormat": {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    }
+  ]
+}

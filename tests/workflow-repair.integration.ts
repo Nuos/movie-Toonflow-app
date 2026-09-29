@@ -1,0 +1,66 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import os from 'node:os';
+import path from 'node:path';
+import express from 'express';
+import { optionalEmbedding, lexicalSearch } from '../src/utils/agent/memoryFallback';
+import { planningGuide, scriptErrorMessage } from '../src/agents/scriptAgent/onboarding';
+const Database = require('better-sqlite3');
+async function main(){
+ const root=process.cwd(),temp=await fs.mkdtemp(path.join(os.tmpdir(),'toonflow-workflow-'));
+ await fs.chmod(temp,0o700);await fs.mkdir(path.join(temp,'data'));
+ const original=new Database(path.join(root,'data/db2.sqlite'),{readonly:true});await original.backup(path.join(temp,'data/db2.sqlite'));original.close();
+ await fs.copyFile(path.join(root,'package.json'),path.join(temp,'package.json'));
+ await fs.symlink(path.join(root,'data/skills'),path.join(temp,'data/skills'));
+ process.chdir(temp);process.env.NODE_ENV='prod';
+ const {default:u}=await import('../src/utils');const {db}=await import('../src/utils/db');
+ const {default:Memory}=await import('../src/utils/agent/memory');
+ const {runDecisionAI}=await import('../src/agents/scriptAgent');
+ const {default:ResTool}=await import('../src/socket/resTool');
+ const {default:setPlan}=await import('../src/routes/scriptAgent/setPlanData');
+ const {default:getPlan}=await import('../src/routes/scriptAgent/getPlanData');
+ const projectId=99349990, scriptId=99349991, iso=projectId+':scriptAgent';
+ const app=express();app.use(express.json());app.use('/save',setPlan);app.use('/read',getPlan);
+ const server=app.listen(0,'127.0.0.1');await new Promise<void>(resolve=>server.once('listening',resolve));
+ const base=`http://127.0.0.1:${(server.address() as any).port}`;
+ async function post(route:string,body:any){const r=await fetch(base+route,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});assert.equal(r.status,200);return r.json() as Promise<any>;}
+ const originalText=u.Ai.Text;let textCalls=0;
+ try{
+  await db('o_project').insert({id:projectId,name:'流程回归项目',userId:1});
+  await db('o_script').insert({id:scriptId,projectId,name:'原名称',content:'原正文'});
+  await db('o_setting').where('key','messagesPerSummary').update({value:'3'});
+  assert.equal(await optionalEmbedding('你好',async()=>{throw Error('missing')}),null);
+  assert.deepEqual(await optionalEmbedding('你好',async()=>[1,2]),[1,2]);
+  assert.equal(lexicalSearch([{content:'巨石裂开'},{content:'宫殿中的宴会'}],'巨石',1)[0].content,'巨石裂开');
+  u.Ai.Text=(()=>({invoke:async()=>{throw Error('summary unavailable')},stream:async()=>{textCalls++;return {fullStream:(async function*(){yield {type:'text-delta',text:'请确认每集时长。'};})()}}})) as any;
+  const memory=new Memory('scriptAgent',iso);
+  await memory.add('user','巨石裂开，主角重获自由');await memory.add('user','计划六集');await memory.add('user','竖屏短剧');
+  assert.equal((await db('memories').where({isolationKey:iso,type:'message'})).length,3,'missing embeddings and failed summary must not discard chat');
+  const recalled=await memory.get('巨石');assert.equal(recalled.shortTerm.length,3);assert.ok(recalled.rag.some(r=>r.content.includes('巨石')));
+  assert.ok((await memory.deepRetrieve('巨石')).some(r=>r.content.includes('巨石')));
+  const events:any[]=[];const socket={emit:(name:string,data:any)=>events.push({name,data})} as any;
+  const resTool=new ResTool(socket,{projectId});
+  const ctx={socket,isolationKey:iso,text:'开始剧本规划',resTool,msg:resTool.newMessage('assistant'),thinkConfig:{think:false,thinlLevel:0 as const}};
+  await runDecisionAI(ctx);assert.equal(textCalls,0,'onboarding must work without any AI call');
+  assert.ok(events.some(e=>e.name==='content:update'&&e.data.data.includes('尚未导入')));
+  assert.ok(events.some(e=>e.name==='message:update'&&e.data.status==='complete'));
+  await runDecisionAI({...ctx,text:'计划六集，请帮我确认需求',msg:resTool.newMessage('assistant')});
+  assert.equal(textCalls,1,'normal conversation must reach text AI despite missing embedding');
+  assert.match(planningGuide('测试',[{eventState:1,event:'事件',chapterIndex:1}],false),/原文准备就绪/);
+  assert.match(planningGuide('测试',[{eventState:-1,event:null}],false),/其余章节/);
+  assert.match(scriptErrorMessage(Error('DeepSeek 402: Insufficient Balance')),/补充.*余额/);
+  assert.match(scriptErrorMessage(Error('429 Too Many Requests')),/暂时受限/);
+  assert.match(scriptErrorMessage(Error('401 secret sk-very-private')),/身份验证失败/);assert.ok(!scriptErrorMessage(Error('401 secret sk-very-private')).includes('sk-'));
+  const identity=await post('/save',{projectId,agentType:'scriptAgent',data:{storySkeleton:'骨架',adaptationStrategy:'策略',script:[{id:scriptId,name:'更名后的剧本',content:'更新正文'}]}});
+  assert.equal(identity.data.script[0].id,scriptId);assert.equal(identity.data.script[0].name,'更名后的剧本');
+  let saved=await post('/read',{projectId,agentType:'scriptAgent'});assert.equal(saved.data.data.script[0].name,'更名后的剧本');assert.equal(saved.data.data.script[0].id,scriptId);assert.equal(saved.data.data.script[0].content,'更新正文');
+  await post('/save',{projectId,agentType:'scriptAgent',data:{storySkeleton:'第二版骨架',adaptationStrategy:'策略'}});
+  assert.equal((await db('o_script').where({projectId})).length,1);assert.equal((await db('o_script').where({id:scriptId}).first())!.content,'更新正文');
+  const created=await post('/save',{projectId,agentType:'scriptAgent',data:{storySkeleton:'骨架',adaptationStrategy:'策略',script:[{name:'新集',content:'初稿'}]}});
+  const createdId=created.data.script.find((s:any)=>s.name==='新集').id;assert.ok(createdId);
+  await post('/save',{projectId,agentType:'scriptAgent',data:{storySkeleton:'骨架',adaptationStrategy:'策略',script:[{id:createdId,name:'新集修订名',content:'修订稿'}]}});
+  assert.equal((await db('o_script').where({projectId})).length,2);assert.equal((await db('o_script').where({id:createdId}).first())!.content,'修订稿');
+  console.log('PASS: missing embedding + summary failure, memory persistence/retrieval, no-model onboarding, AI continuation, safe errors, script rename/save/read without duplication');
+ }finally{u.Ai.Text=originalText;await new Promise<void>(resolve=>server.close(()=>resolve()));await db.destroy();process.chdir(root);await fs.rm(temp,{recursive:true,force:true});}
+}
+main().catch(error=>{console.error(error);process.exit(1)});

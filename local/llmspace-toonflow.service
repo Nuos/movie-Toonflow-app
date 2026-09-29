@@ -1,0 +1,19 @@
+[Unit]
+Description=Toonflow local AI movie workbench
+After=network.target llmspace-toonflow-h3.service
+Wants=llmspace-toonflow-h3.service
+
+[Service]
+Type=simple
+WorkingDirectory=/home/ubuntu/workspace/project/nuos/movie-Toonflow-app
+Environment=NODE_ENV=prod
+Environment=HOST=127.0.0.1
+Environment=PORT=10588
+ExecStart=/usr/bin/node data/serve/app.js
+Restart=on-failure
+RestartSec=5
+StandardOutput=append:/home/ubuntu/workspace/project/nuos/movie-Toonflow-app/local/logs/toonflow.log
+StandardError=append:/home/ubuntu/workspace/project/nuos/movie-Toonflow-app/local/logs/toonflow.log
+
+[Install]
+WantedBy=default.target
